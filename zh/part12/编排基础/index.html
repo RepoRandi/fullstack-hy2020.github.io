@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e909ca77e15e07f0bc8a.css">@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600);@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400);code[class*=language-],pre[class*=language-]{color:#fff;background:none;text-shadow:0 -.1em .2em #000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}:not(pre)>code[class*=language-],pre[class*=language-]{background:#4d4033}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border:.3em solid #7a6652;border-radius:.5em;box-shadow:inset 1px 1px .5em #000}:not(pre)>code[class*=language-]{padding:.15em .2em .05em;border-radius:.3em;border:.13em solid #7a6652;box-shadow:inset 1px 1px .3em -.1em #000;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998066}.token.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#d1949e}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#bde052}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f5b83d}.token.atrule,.token.attr-value,.token.keyword{color:#d1949e}.token.important,.token.regex{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}.course{position:relative;width:100%}@media (min-width:992px){.course{display:flex;flex-wrap:nowrap;flex-direction:row;align-items:flex-start}}.course p{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course p{margin-left:1rem}}.course p:not(:last-of-type){margin-bottom:1rem}@media (min-width:640px){.course h1{margin-left:3rem}}.course h2,.course h3,.course h4{padding-bottom:2rem}@media (min-width:640px){.course h2,.course h3,.course h4,.course table{margin-left:1rem}}.course ul{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course ul{margin-left:2.2rem}}.course h2:not(:first-of-type){margin-top:2rem}.course pre{margin:2rem 0;background-color:#33332d;color:#fff}.course em{font-family:Courier;font-style:normal;background-color:hsla(0,0%,88.2%,.6);padding:1px 5px 2px}.course img{border:11px solid transparent}.course .banner,.course .container{position:static}.course .letter{width:4rem;height:4rem;border-width:5px;border-style:solid;border-radius:2.5rem;text-align:center;margin:1rem;line-height:1.3em;transform:translate(-1rem)}@media (min-width:640px){.course .letter{transform:translate(-3rem,4.5rem)}}.course .letter,.course h1{font-size:2.3rem;font-weight:700}.course-content-container{width:100%}.course-content a,.tasks a{border:0;border-bottom-width:2px;border-style:solid;padding:2px}.course-content{width:90%;margin:0 auto;max-width:1200px}@media (min-width:992px){.course-content-inner{padding-left:30%;padding-right:5%}}.tasks a{border-color:#33332d!important}.tasks a:hover{background-color:#fff!important;color:#000!important}.gatsby-highlight-code-line{background-color:hsla(0,0%,88.2%,.3);display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:1em}code[class*=language-],pre[class*=language-]{text-shadow:none}.arrow-go-up{width:36px;height:36px;position:fixed;bottom:5%;right:5%;z-index:99999;cursor:pointer}@media (max-width:639px){.arrow-go-up{right:10%}}.part-main__banner{background-position:50%;background-size:50%;padding-bottom:10%;background-repeat:no-repeat}@media (max-width:639px){.part-main__banner{background-position:top;background-size:70%;padding-bottom:30%!important}}.part-intro{font-family:IBM Plex Sans,monospace!important}.part-intro p:not(:last-of-type){padding-bottom:2em}.part-intro__banner{background-size:50%;background-repeat:no-repeat;background-position:100%}@media (max-width:639px){.part-intro__banner{background-position:top;background-size:70%}.part-intro__banner>.container{margin-top:40%}}.part-intro a{border-bottom:1px solid #33332d}.part-intro a:hover{background-color:#fff}.arrow__container{position:relative}.arrow__container:not():first-child{background:none;background-color:none}@media (min-width:640px){.arrow__container:not():first-child{border-left:none}.arrow__container:not():first-child:before{content:"";background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhLS1HZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCktLT48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NzcuMTc1IDQ3Ny4xNzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTM2MC43MzEsMjI5LjA3NWwtMjI1LjEtMjI1LjFjLTUuMy01LjMtMTMuOC01LjMtMTkuMSwwcy01LjMsMTMuOCwwLDE5LjFsMjE1LjUsMjE1LjVsLTIxNS41LDIxNS41CgkJYy01LjMsNS4zLTUuMywxMy44LDAsMTkuMWMyLjYsMi42LDYuMSw0LDkuNSw0YzMuNCwwLDYuOS0xLjMsOS41LTRsMjI1LjEtMjI1LjFDMzY1LjkzMSwyNDIuODc1LDM2NS45MzEsMjM0LjI3NSwzNjAuNzMxLDIyOS4wNzV6CgkJIi8+PC9nPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjwvc3ZnPg==) no-repeat;background-size:contain;position:absolute;top:0;left:0;height:100%;width:100%}}.arrows--horizontal{display:flex;position:relative;margin:0;align-items:flex-start}.arrow__wrapper{display:flex;justify-content:flex-start;align-items:center;margin:0}.arrow__wrapper:first-of-type{border-right:none;z-index:20}.arrow__wrapper:nth-of-type(n+2){margin-left:-4rem;z-index:10}.arrow__wrapper:nth-of-type(n+2) .arrow__rectangle{border-left:none;padding-left:4rem}.arrow__wrapper:nth-of-type(3){z-index:5}.arrow__wrapper:hover .arrow__point,.arrow__wrapper:hover .arrow__rectangle,.arrow__wrapper:hover .arrow__rectangle>a{background-color:#33332d!important;color:#fff!important}.arrow__rectangle{padding:1rem;justify-content:center;align-items:center;border:2px solid #33332d;border-right:none;z-index:2;overflow:hidden;font-family:IBM Plex Sans,monospace;position:relative}@media (max-width:991px){.arrow__rectangle{font-size:1rem}}.arrow__rectangle .bold{font-weight:600}.arrow__rectangle--thick-border{border:3px solid #33332d;border-right:none}.arrow__point{padding:1.25rem;border:2px solid #33332d;border-bottom:none;border-left:none;transform:translate(-1.3rem) rotate(45deg);z-index:1;overflow:hidden}.arrow__point--thick-border{border:3px solid #33332d;border-bottom:none;border-left:none}.arrow__wrapper--stacked{display:flex;justify-content:flex-start;align-items:center;margin:auto auto auto 0}@media (max-width:639px){.arrow__wrapper--stacked .arrow__rectangle{border:none;background-color:transparent!important;padding:0;font-size:1rem;justify-content:unset}.arrow__wrapper--stacked .arrow__rectangle>p>span{border-bottom:1px solid #33332d;margin:auto}.arrow__wrapper--stacked .arrow__rectangle>p>span:hover{background-color:#fff!important;color:#000}.arrow__wrapper--stacked .arrow__point{display:none}}.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:1rem}@media (min-width:640px){.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:-2px}}.arrow__wrapper--stacked .arrow__rectangle{position:relative}@media (min-width:640px){.arrow__wrapper--stacked .arrow__rectangle{padding:1.25rem}}@media (min-width:992px){.arrow__wrapper--stacked .arrow__rectangle{padding:1rem}}.arrow__wrapper--stacked .arrow__point{padding:1.08rem;margin-left:2px}@media (min-width:640px){.arrow__wrapper--stacked .arrow__point{margin-left:unset;padding:1.25rem}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow__point,.arrow__wrapper--stacked:hover .arrow__rectangle{background-color:#33332d!important}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow--stacked-letter,.arrow__wrapper--stacked:hover .arrow--stacked-title{color:#fff}}.arrow--stacked-title{font-family:IBM Plex Mono,monospace}@media (min-width:640px){.arrow--stacked-title{white-space:nowrap}}.arrow__container--with-link{width:100%!important}@media (max-width:639px){.breadcrumb .arrow__wrapper{display:none}}.breadcrumb .arrow__wrapper:hover .arrow__point,.breadcrumb .arrow__wrapper:hover .arrow__rectangle{background-color:#33332d!important}.breadcrumb .arrow__wrapper:hover .arrow--stacked-letter,.breadcrumb .arrow__wrapper:hover .arrow--stacked-title{color:#fff}.breadcrumb .arrow__rectangle{position:relative}@media (max-width:639px){.breadcrumb .arrow__rectangle{border:none;padding:0;font-size:.7rem;white-space:nowrap;background-color:transparent!important;color:#33332d}}@media (max-width:639px){.breadcrumb .arrow__point{display:none}}.banner{display:flex;width:100%;align-items:center;position:relative;padding:2rem 0;background-color:#e1e1e1}@media (min-width:992px){.banner{padding:3.444rem 3.444rem 4.444rem}}html{font-family:IBM Plex Mono,monospace;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:IBM Plex Mono,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em IBM Plex Mono,monospace;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:IBM Plex Mono,monospace;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{margin:2rem 0 -.5rem;font-size:1.38316rem}h3,h4{padding:0;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{margin:2rem 0 -1rem;font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.element--flex{display:flex;flex-wrap:wrap}.element--space-around{justify-content:space-around}.element--space-between{justify-content:space-between}.element--column{flex-direction:column}.element--centered{align-items:center;justify-content:center!important}@media (min-width:992px){.element--centered-in-desktop{align-items:center;justify-content:center!important}}@media (min-width:992px){.element--horizontal-half{width:45%}}.element--auto-margin{margin:auto}.element--auto-bottom-margin{margin-bottom:auto}.element--flex-start{align-content:flex-start}.element--no-wrap{flex-wrap:nowrap}.element--relative{position:relative!important}.edit-link>span{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:inherit}.accordion__container{margin-bottom:1rem}.accordion__title{padding-left:2.149rem!important;padding-right:2.149rem!important;font-size:1.111rem!important;font-weight:600}.accordion{background-color:#fff;border:3px solid #33332d;border-radius:5px;color:#444;cursor:pointer;padding:1rem;width:100%;text-align:left;outline:none;font-size:15px;transition:max-width .4s}.accordion:hover,.active{background-color:#e1e1e1}.accordion:after{content:"+";font-size:1.5rem;float:right;margin-left:5px}.active{border-color:#fff}.active:after{content:"-";font-size:1.5rem}.panel{background-color:#fff;transition:height .3s;transition-timing-function:ease-in-out;overflow:hidden}.accordion--side-navigation{width:100%;margin-left:unset}.accordion--side-navigation .accordion{border:none;padding:0!important;background-color:transparent!important;color:#33332d!important;border-radius:0}.accordion--side-navigation .accordion__title{font-size:16px!important;font-weight:unset;background-color:transparent}.accordion--side-navigation .accordion__title:hover{background-color:#33332d!important;color:#fff!important}.accordion--side-navigation .panel{padding:1rem 0 0!important;background-color:transparent}.accordion--side-navigation .panel ul{margin-left:1rem}.accordion--side-navigation .accordion:hover,.accordion--side-navigation .active{background-color:#33332d;color:#fff}.accordion--side-navigation .accordion:after,.accordion--side-navigation .active:after{content:""}.body-text:not(:last-of-type){margin-bottom:2.5rem}.body-text__title{color:#33332d;font-size:1.44rem;line-height:1.25em;font-weight:700;margin:0;position:relative;top:50%;transform:translateY(-50%)}.body-text__content:not(:last-of-type){padding-bottom:2em}.bold{font-weight:700}.body-text--no-padding{padding:0!important}@media (min-width:640px){.companies__main-title .body-text__title{font-size:3rem}}.challenge-title{font-size:1.44rem}@media (min-width:992px){.company__logo{width:15%!important}}.content-liftup{position:relative;text-decoration:none}.content-liftup--small{box-sizing:border-box}.content-liftup--small>:last-child{margin-bottom:0}.content-liftup__name{margin-top:1.5rem;color:#33332d;font-weight:700}@media (min-width:992px){.content-liftup__name{margin-top:2rem}}.content-liftup__summary{margin-top:1rem;margin-bottom:3rem;color:#33332d;line-height:28px}.content-liftup__link{text-decoration:none;font-weight:700}.content-liftup .content-liftup__image:after,.content-liftup__link:after{content:"";position:absolute;top:0;left:0;height:100%;width:100%}.content-liftup .content-liftup__image:after{opacity:.5;z-index:2}body,html{margin:0;padding:0;font-family:IBM Plex Mono,monospace;font-weight:500;color:#33332d;font-size:14px;line-height:1.555rem}@media (min-width:992px){body,html{font-size:18px}}.main-wrapper{min-height:100vh;display:flex;flex-direction:column}p{margin:0;text-align:left;line-height:1.5em}a,p{color:#33332d}a{text-decoration:none}.link a{border-bottom:2px solid #e1e1e1}.link a:hover{background-color:#e1e1e1}.container{position:relative;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;width:90%;max-width:1300px}@media (max-width:639px){.container{padding:0 20px}}@media (min-width:992px){.container--right{margin-right:5%;width:54%;max-width:779.9844px}}@media (min-width:992px) and (min-width:1300px){.container--right{margin-right:calc((100% - 1300px)/2)}}.hidden{display:none!important}.centered{text-align:center}@media (max-width:639px){.centered--mobile{justify-content:center;align-content:center;align-items:center}}.spacing{margin-top:2rem}@media (max-width:992px) and (min-width:640px){.spacing--tablet{margin-top:5rem!important}}@media (min-width:992px){.spacing{margin-top:5rem}}.spacing--small{margin-top:1rem}@media (min-width:992px){.spacing--small{margin-top:3.444rem}}.spacing--large{margin-top:4rem}@media (min-width:992px){.spacing--large{margin-top:10rem}}.spacing--extra-large{margin-top:4rem}@media (min-width:992px){.spacing--extra-large{margin-top:20rem}}.spacing--after{margin-bottom:2rem}@media (min-width:992px){.spacing--after{margin-bottom:5rem}}@media (max-width:639px){.spacing--after--mobile{margin-bottom:5rem}}@media (min-width:992px){.spacing--after-small{margin-bottom:2.5rem}}.spacing--after-large{margin-bottom:4rem}@media (min-width:992px){.spacing--after-large{margin-bottom:10rem}}@media (max-width:991px){.spacing--mobile{margin-top:2rem}}@media (max-width:1299px){.spacing--mobile--small{margin-top:1.5rem}}@media (max-width:1299px){.spacing--mobile--large{margin-top:3rem}}.col-1{width:100%}@media (min-width:992px){.col-1{width:10%}}.col-2{width:100%}@media (min-width:992px){.col-2{width:20%}}.col-3{width:100%}@media (min-width:992px){.col-3{width:30%}}.col-4{width:100%}@media (min-width:992px){.col-4{width:40%}}.col-5{width:100%}@media (min-width:992px){.col-5{width:50%}}.col-6{width:100%}@media (min-width:992px){.col-6{width:60%}}.col-7{width:100%}@media (min-width:992px){.col-7{width:70%}}.col-8{width:100%}@media (min-width:992px){.col-8{width:80%}}.col-9{width:100%}@media (min-width:992px){.col-9{width:90%}}.col-10{width:100%}@media (min-width:992px){.col-10{width:100%}}@media (min-width:992px){.push-right-1{margin-left:10%}.push-right-2{margin-left:20%}.push-right-3{margin-left:30%}.push-right-4{margin-left:40%}.push-right-5{margin-left:50%}.push-left-1{margin-right:10%}.push-left-2{margin-right:20%}.push-left-3{margin-right:30%}.push-left-4{margin-right:40%}.push-left-5{margin-right:50%}.push-left{margin-right:auto}.push-right{margin-left:auto}}@media (max-width:639px){.col-1--mobile{width:10%!important}.col-2--mobile{width:20%!important}.col-3--mobile{width:30%!important}.col-4--mobile{width:40%!important}.col-5--mobile{width:50%!important}.col-6--mobile{width:60%!important}.col-7--mobile{width:70%!important}.col-8--mobile{width:80%!important}.col-9--mobile{width:90%!important}.col-10--mobile{width:100%!important}.push-right-1--mobile{margin-left:10%!important}.push-right-2--mobile{margin-left:20%!important}.push-right-3--mobile{margin-left:30%!important}.push-right-4--mobile{margin-left:40%!important}.push-right-5--mobile{margin-left:50%!important}.push-left-1--mobile{margin-right:10%!important}.push-left-2--mobile{margin-right:20%!important}.push-left-3--mobile{margin-right:30%!important}.push-left-4--mobile{margin-right:40%!important}.push-left-5--mobile{margin-right:50%!important}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}@media (max-width:1299px){.col-1--tablet{width:10%}.col-2--tablet{width:20%}.col-3--tablet{width:30%}.col-4--tablet{width:40%}.col-5--tablet{width:50%}.col-6--tablet{width:60%}.col-7--tablet{width:70%}.col-8--tablet{width:80%}.col-9--tablet{width:90%}.col-10--tablet{width:100%}.order-0--tablet{order:0}.order-1--tablet{order:1}.order-2--tablet{order:2}.order-3--tablet{order:3}.order-4--tablet{order:4}.order-5--tablet{order:5}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}.centered-vertically{display:flex;flex-direction:column;justify-content:center}.nav-item-hover{text-decoration:none;color:#33332d;font-weight:500;padding:.2em}@media (min-width:640px){.nav-item-hover{font-weight:600}}.nav-item-hover:active,.nav-item-hover:focus,.nav-item-hover:hover{color:#fff;background-color:#33332d!important}.nav-item-hover:active,.nav-item-hover:focus{outline:2px solid #706be4}.flex-fix-aligning:after,.flex-fix-aligning:before{content:"";width:30%;order:2}.index__main-title{font-size:1.571rem}@media (min-width:992px){.index__main-title{font-size:3rem}}.auto-bottom-margin{margin-bottom:auto}@media (min-width:992px){.absolute-top-right--desktop{position:absolute;top:0;right:0}}@media (min-width:640px){.frontpage__hero .image{top:-2em}}@media (min-width:992px){.frontpage__hero{flex-direction:column}.frontpage__hero .image{top:4em}}.heading-font{font-family:IBM Plex Sans,monospace}.about__challenge-button{box-shadow:-3px 5px #33332d;padding:.6rem 1rem;border:3px solid #33332d;font-weight:600}.about__challenge-button:hover{background-color:#33332d;color:#fff;cursor:pointer}.about__challenge-button--turquoise{background-color:#82f7eb}@media (max-width:1299px){.space-between--mobile{justify-content:space-between}}.challenge__banner{display:flex;justify-content:center;margin-bottom:-70px}@media (min-width:640px){.challenge__banner{transform:translateY(-10px)}}@media (min-width:1300px){.challenge__banner{margin-bottom:-370px}}.challenge__banner .image{margin:0;width:70%;transform:translateY(-25%)}@media (min-width:640px){.challenge__banner .image{transform:translateY(-10%)}}@media (min-width:1300px){.challenge__banner .image{transform:translateY(-30%)}}.header{position:-webkit-sticky;position:sticky;z-index:9999999999;top:0;box-sizing:border-box;width:100%;padding-top:1.444rem;padding-bottom:1rem;transition:all .2s ease-in-out}.header--small{pointer-events:none}.header__logo{margin:0 10px;pointer-events:auto}.navigation{z-index:2;list-style:none;opacity:0;display:none;margin:0;padding:5%;flex-direction:column;justify-content:center;align-items:center;background:#e1e1e1;position:fixed;top:8%;right:5%;transition:opacity .3s ease-in-out;font-weight:200}@media (min-width:1300px){.navigation{display:flex;opacity:1;padding:0;font-weight:400;position:static;background:none;overflow:hidden;flex-direction:row}}@media (max-width:1299px){.navigation__wrapper .language-switcher{margin:20px 0 0}}@media (min-width:1300px){.navigation__wrapper{flex-grow:100}}.navigation__language-picker{margin-left:auto}.navigation__toggle{z-index:3;position:absolute;top:0;right:0;width:50px;height:40px;cursor:pointer;border:none;background:none;outline:none;border-radius:4px}@media (min-width:1300px){.navigation__toggle{display:none}}.navigation__mobile-logo{display:none}.navigation__toggle-icon{top:8px;left:10px}.navigation__toggle-icon,.navigation__toggle-icon:after,.navigation__toggle-icon:before{position:absolute;width:30px;height:3px;transition:all .3s ease;border-radius:4px;background-color:#33332d}.navigation__toggle-icon:after,.navigation__toggle-icon:before{content:"";display:block}.navigation__toggle-icon:before{top:10px}.navigation__toggle-icon:after{top:20px}.is-open--navigation{overflow:hidden;height:100vh}.is-open--navigation .navigation{opacity:1;display:unset}.is-open--navigation .navigation:before{content:"";background-color:#e1e1e1;position:absolute;width:25px;height:25px;top:-3px;right:13px;transform:rotate(45deg)}.is-open--navigation .navigation__mobile-logo{display:block;width:30px;height:30px;position:absolute;top:47px;left:5%}@media (min-width:1300px){.is-open--navigation .navigation__mobile-logo{display:none}}.is-open--navigation .navigation__toggle-icon{transform:translate3d(0,10px,0) rotate(45deg)}.is-open--navigation .navigation__toggle-icon,.is-open--navigation .navigation__toggle-icon:after,.is-open--navigation .navigation__toggle-icon:before{background:#33332d}.is-open--navigation .navigation__toggle-icon:before{transform:rotate(-45deg) translate3d(-5.71429px,-6px,0);opacity:0}.is-open--navigation .navigation__toggle-icon:after{transform:translate3d(0,-19px,0) rotate(-90deg)}.navigation__item{margin:22px 0;white-space:nowrap}.navigation__item:first-of-type{margin:0 0 22px}.navigation__item:last-of-type{margin:22px 0 0}@media (min-width:1300px){.navigation__item{margin:0 30px;padding:0!important}.navigation__item:first-of-type{margin:0 30px 0 2rem}.navigation__item:last-of-type{margin:0 0 0 30px}}.LanguagePicker-module--select--364N3{padding:3px 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #33332d;border-radius:5px;color:inherit;background-color:#fff;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23333333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;background-size:16px 12px;width:6.5rem}.SvgIcon-module--svgIcon--1nGJ6{-webkit-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;flex-shrink:0;font-size:1.5rem}.SrOnly-module--srOnly--2Hn2L{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.SearchLink-module--searchLink--2IShR{margin-left:auto;border-radius:4px;padding:4px;display:inline-flex}.SearchLink-module--searchLink--2IShR:hover{background-color:#33332d;color:#fff}.triple-border{position:relative;padding:2px;border-radius:5px 0;transition:color .1s ease-in-out,background-color .1s ease-in-out}.triple-border:after,.triple-border:before{z-index:2;content:"";border:2px solid #33332d;border-radius:5px;position:absolute;width:calc(100% + 5px);height:calc(100% + 5px)}.triple-border:before{left:0;top:0}.triple-border:after{bottom:0;right:0}.triple-border__container{position:relative;overflow:hidden;border-radius:3px 0}.triple-border--large-margin{margin:13px;padding:3px}.triple-border--large-margin:after,.triple-border--large-margin:before{content:"";border-width:3px;border-radius:13px;width:calc(100% + 13px);height:calc(100% + 13px)}.triple-border--large-margin .triple-border__container{border-radius:10px 0}.triple-border__logo{padding:.2rem;font-size:1.111rem;font-weight:600}.triple-border__return-tasks{font-size:.9rem;padding:1rem .2rem}.image__content{position:absolute;top:0;left:0;height:100%;width:100%;-o-object-fit:cover;object-fit:cover}.image--contain .image__content{-o-object-fit:contain;object-fit:contain}.image{overflow:hidden;width:100%;position:relative}@media (min-width:992px){.image{width:40%}}.image .image__container{height:0;position:relative;width:100%;padding-bottom:89.0625%}.image--circle{border-radius:50%}.image--circle .image__content{background-color:#e1e1e1}.image--square-big{width:100%}.image--square-big .image__container{width:100%;padding-bottom:100%}.image--extra-small{width:8%}.image--extra-small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--extra-small{width:calc(33.33333% - 1rem)}}.image--small{width:15%}.image--small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--small{width:calc(33.33333% - 1rem)}}.image--medium{width:50%}.image--medium .image__container{width:100%;padding-bottom:71.25%}.image--large{width:100%}@media (min-width:992px){.image--large{width:60%}}.image--large .image__container{padding-bottom:59.37%;width:100%}.image--full-width{width:100%}.image--full-width .image__container{padding-bottom:59.37%;width:100%}.image--actual-size{width:100%}.image--actual-size .image__container{height:0;position:relative;width:100%;padding-bottom:60%}.form p{font-family:IBM Plex Sans,monospace;font-size:.9rem;margin-bottom:10px}.form input{padding:1rem;border:1px solid #e1e1e1;outline:0}.form input:focus{border:1px solid #33332d}.form .submit{border:3px solid #33332d;background-color:#e1e1e1;padding:.7rem 2rem}.form .submit:hover{cursor:pointer;background-color:#33332d;color:#fff}.developer-story__image{margin-bottom:auto}.developer-story__name{margin-top:4rem;font-size:1.2rem}.developer-story__title{font-size:.9rem}.developer-story__read-more{margin-top:2rem;line-height:1.1rem;width:auto;background:none;color:inherit;padding:0!important;border:none;border-bottom:2px solid #e1e1e1;cursor:pointer}.developer-story__read-more:hover{background-color:#e1e1e1}.some-logo__link{margin:1rem 1rem 0 0;display:inline-block}.some-logo__image{width:1.5rem;height:1.5rem;margin:0}#footer{margin-top:auto}@media (min-width:992px){#footer{align-items:center}}#footer a:hover{background-color:transparent!important}#footer .footer__navigation{display:none}@media (max-width:1299px){#footer .footer__navigation{width:100%;display:block}#footer .footer__navigation-link-container{display:flex;flex-direction:column}}#footer .footer__navigation-link{font-size:1rem;line-height:18px;white-space:nowrap;font-family:IBM Plex Sans,monospace;margin-left:0!important;margin-right:auto}@media (max-width:639px){#footer .footer__navigation-link{line-height:8px}}#footer .footer__navigation-link:hover{color:#fff!important;background-color:#33332d!important}#footer .footer__navigation-link:nth-of-type(n+2){margin-top:2.142rem}@media (min-width:1300px){#footer .footer__navigation{flex-direction:row;flex-wrap:nowrap;justify-content:flex-end}#footer .footer__navigation-link{margin-top:0!important;margin-bottom:auto}#footer .footer__navigation-link:nth-of-type(n+1){margin-right:2.877rem}#footer .footer__navigation-link:last-of-type{margin-right:0!important}}.prev-next__container .separator{display:none}@media (max-width:639px){.prev-next__container .separator{display:block;background-color:#33332d;width:2px!important}}.prev-next__container .prev b,.prev-next__container .prev p{text-align:right}@media (max-width:639px){.prev-next__container .prev p:before{content:"<";margin-right:1rem}}@media (max-width:639px){.prev-next__container .next p:after{content:">";margin-left:1rem}}.scroll-navigation-container{display:none}@media (min-width:992px){.scroll-navigation-container{pointer-events:none;display:block;font-size:16px;position:-webkit-sticky;position:sticky;width:100%;margin-right:-100%;left:0;top:-100px;padding-top:200px}}.scroll-navigation-container-inner{width:90%;margin:0 auto;max-width:1200px}.scroll-navigation{pointer-events:auto;display:flex;width:30%;max-width:30%/.9;height:100%;overflow-y:auto;max-height:calc(100vh - 100px);padding-right:1rem;z-index:199}.scroll-navigation li{list-style-type:none}.scroll-navigation li.selected a,.scroll-navigation li:hover a{background-color:#33332d;color:#fff!important}.scroll-navigation li:before{content:"-"}.left-navigation-link{padding-left:1.2rem;text-indent:-1.2rem;display:block}.left-navigation-link:hover{background-color:#33332d!important;color:#fff!important}.level-h1{font-weight:700;padding-left:2.8rem;text-indent:-2.8rem}.level-h2{padding-left:1.6rem;text-indent:-1.6rem}.sub-header{color:#33332d;font-family:IBM Plex Mono,monospace;padding-bottom:1.357rem}@media (min-width:992px){.sub-header{padding-bottom:2.333rem}}.InputField-module--inputField--3oXh5{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;border:0;font-family:inherit;padding:16px 12px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.3);color:#000;transition:all .15s ease}.InputField-module--inputField--3oXh5:hover{box-shadow:inset 0 -2px 0 rgba(0,0,0,.4)}.InputField-module--inputField--3oXh5:focus{outline:none;box-shadow:inset 0 -2px 0 rgba(0,0,0,.5)}</style><meta name="generator" content="Gatsby 2.23.22"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><title data-react-helmet="true">Fullstack part12 | </title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:title" content="Fullstack part12 | "/><meta data-react-helmet="true" property="og:description" content=""/><meta data-react-helmet="true" name="og:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Houston Inc. Consulting oy"/><meta data-react-helmet="true" name="twitter:title" content="Fullstack part12 | "/><meta data-react-helmet="true" name="twitter:description" content=""/><meta data-react-helmet="true" name="twitter:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="ds9pQKiK3kjhRSHHbf5ccoG-oJggn7Lq4A8uHxM3Mkw"/><meta data-react-helmet="true" name="keywords" content="fullstack, Full stack -websovelluskehitys, course, helsingin yliopisto, tietojenkäsittelytieteen osasto, mooc, mooc.fi, full stack, full stack open, web-sovelluskehitys, web, houston, houston inc, websovelluskehitys, web-sovellus, React, Redux, Node.js, Node, MongoDB, GraphQL, REST, REST api, single page -sovellus, ohjelmointi, university of helsinki, department of computer science, web development, software development, web, web application, single page app, programming, "/><link rel="icon" href="/favicon-32x32.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#e1e1e1"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="canonical" href="https://fullstackopen.com/zh/part12/编排基础" data-baseprotocol="https:" data-basehost="fullstackopen.com"/><link as="script" rel="preload" href="/e4b9374bcd292c90587e3ccf579324c3065ac22f-91cf5431cb3e1fc76518.js"/><link as="script" rel="preload" href="/app-b048fbb12687222f4356.js"/><link as="script" rel="preload" href="/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js"/><link as="script" rel="preload" href="/ff8e348e8d42e8d61f84312613c75c948ce81396-73e1478ec1d8afda6a11.js"/><link as="script" rel="preload" href="/styles-89fd2ae28bdf06750a71.js"/><link as="script" rel="preload" href="/5d7a54886b2742230021cc39eab839038eb7a677-7e0df6a64154312ad871.js"/><link as="script" rel="preload" href="/30844a71ec80b1e82ad30323d06b914984ff6c2b-bfbd018b7380e158211d.js"/><link as="script" rel="preload" href="/commons-9bbfcb18005d64442a91.js"/><link as="script" rel="preload" href="/framework-8cb3270495e919798e3b.js"/><link as="script" rel="preload" href="/webpack-runtime-615dc111c703ff6885cd.js"/><link as="fetch" rel="preload" href="/page-data/zh/part12/编排基础/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="main-wrapper"><div class="header " style="background-color:white"><div class="container" style="align-items:center;justify-content:flex-start"><a class="header__logo" href="/"><div class="triple-border nav-item-hover " style="padding:0.2em"><div class="triple-border__container triple-border__logo" style="background-color:transparent;z-index:10">{() =&gt; fs}</div></div></a><div class="navigation__wrapper "><button aria-label="Navigation menu" aria-expanded="false" class="navigation__toggle"><div class="navigation__toggle-icon"></div></button><nav><ul class="navigation"><li class="navigation__item "><a class="nav-item-hover" href="/zh/about">关于课程</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/#course-contents">课程内容</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/faq">常见问题</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/companies">合作伙伴</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/challenge">挑战</a></li><a class="SearchLink-module--searchLink--2IShR" href="/zh/search"><span class="SrOnly-module--srOnly--2Hn2L">从教程中搜索</span><svg role="img" viewBox="0 0 24 24" class="SvgIcon-module--svgIcon--1nGJ6"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></a><select class="navigation__language-picker LanguagePicker-module--select--364N3"><option value="fi">Suomi</option><option value="en">English</option><option selected="" value="zh">中文</option><option value="es">Spanish</option></select></ul></nav></div></div></div><div class="course-container spacing--after"><div class="banner part-main__banner spacing--mobile--small" style="background-image:url(/static/09ec6709015c0dcb492111bd9e645d3d/part-12.svg);background-color:#F9B9D3"><div class="container spacing--after"><div class="col-10 spacing--after"><div class="arrow__container arrows--horizontal breadcrumb"><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#F9B9D3;color:#33332d"><a href="/zh/#course-contents">Fullstack</a></div><div class="arrow__point " style="background-color:#F9B9D3;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#F9B9D3;color:#33332d"><a href="/zh/part12">Part 12</a></div><div class="arrow__point " style="background-color:#F9B9D3;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#33332d;color:white">编排基础</div><div class="arrow__point " style="background-color:#33332d;color:white"></div></div></div></div></div></div><div class="course "><div class="scroll-navigation-container "><div class="scroll-navigation-container-inner "><div class="scroll-navigation  element--column" tag="ul"><a class="left-navigation-link" style="border-color:#F9B9D3" href="/zh/part12/容器介绍">a 容器介绍</a><a class="left-navigation-link" style="border-color:#F9B9D3" href="/zh/part12/构建配置环境">b 构建配置环境</a><div class="accordion__container col-8 push-right-1 accordion--side-navigation"><button class="accordion accordion__title  " style="background-color:#F9B9D3;border-color:#F9B9D3">c 编排基础</button><div class="panel" style="padding:;max-height:0;transition:max-height 0.2s ease-out"><ul></ul></div></div></div></div></div><div class="course-content-container "><div class="course-content element--auto-bottom-margin"><div class="course-content-inner "><p class="col-1 letter" style="border-color:#F9B9D3">c</p><h1 class="sub-header ">编排基础</h1></div></div><div class="course-content "><div class="course-content-inner ">
+<h3>React in container</h3>
+<p>React 的容器化</p>
+<!-- -->
+<p>接下来让我们容器化一个 React 应用。我们选择npm 作为包管理器，虽然 create-react-app 默认是使用yarn的。</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">$ npx create-react-app hello-front --use-npm
+  ...
+
+  Happy hacking!</code></pre></div>
+<!-- -->
+<p>create-react-app 已经为我们安装好了所有依赖，所以我们没有必要运行 npm install了。</p>
+<!-- -->
+<p>下一步将 JavaScript 和CSS 转移到生产就绪的静态文件。 create-react-app 自带了 npm <em>build</em>  命令，所以我们执行：</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">$ npm run build
+  ...
+
+  Creating an optimized production build...
+  ...
+  The build folder is ready to be deployed.
+  ...</code></pre></div>
+<!-- -->
+<p>非常好！最后一步是用一种方法来用服务器提供这些静态文件。你可能知道我们可以使用  <a href="https://expressjs.com/en/starter/static-files.html">express.static</a> 利用express 服务器来做。这个留作回家的一个练习，我们先继续编写我们的Dockerfile。</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token keyword">RUN</span> npm ci
+
+<span class="token keyword">RUN</span> npm run build</code></pre></div>
+<!-- -->
+<p>看起来不错，我们先构建一下确认我们还在正确的轨道上，我们的目标是构建成功，没有失败。然后我们会使用bash 来内部检查一下容器来看看文件是否存在。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker build <span class="token builtin class-name">.</span> -t hello-front
+  <span class="token punctuation">[</span>+<span class="token punctuation">]</span> Building <span class="token number">172</span>.4s <span class="token punctuation">(</span><span class="token number">10</span>/10<span class="token punctuation">)</span> FINISHED 
+
+$ docker run -it hello-front <span class="token function">bash</span>
+
+root@98fa9483ee85:/usr/src/app<span class="token comment"># ls</span>
+  Dockerfile  README.md  build  node_modules  package-lock.json  package.json  public  src
+
+root@98fa9483ee85:/usr/src/app<span class="token comment"># ls build/</span>
+  asset-manifest.json  favicon.ico  index.html  logo192.png  logo512.png  manifest.json  robots.txt  static</code></pre></div>
+<!-- -->
+<p>一个用来服务静态文件的可行方案已经存在与容器的 Node 中，那就是<a href="https://www.npmjs.com/package/serve">serve</a> 。让我们安装serve 并提供静态文件服务。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">root@98fa9483ee85:/usr/src/app<span class="token comment"># npm install -g serve</span>
+
+  added <span class="token number">88</span> packages, and audited <span class="token number">89</span> packages <span class="token keyword">in</span> 6s
+
+root@98fa9483ee85:/usr/src/app<span class="token comment"># serve build</span>
+
+   ┌───────────────────────────────────┐
+   │                                   │
+   │   Serving<span class="token operator">!</span>                        │
+   │                                   │
+   │   Local:  http://localhost:5000   │
+   │                                   │
+   └───────────────────────────────────┘</code></pre></div>
+<!-- -->
+<p>很好！让我们  ctrl+c 退出并添加些内容到Dockerfile</p>
+<!-- -->
+<p>serve 的安装在Dockerfile 中变成了RUN指令，这种方法使得依赖的安装是在构建环节发生的。serve 的build 命令变成了容器的启动命令：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token keyword">RUN</span> npm ci
+
+<span class="token keyword">RUN</span> npm run build
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">RUN</span> npm install <span class="token punctuation">-</span>g serve</span>
+<span class="gatsby-highlight-code-line"><span class="token keyword">CMD</span> <span class="token punctuation">[</span><span class="token string">&quot;serve&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;build&quot;</span><span class="token punctuation">]</span></span></code></pre></div>
+<!-- -->
+<p>我们的CMD 现在用中括号，结果是我们使用了所谓的CMD中的<i>执行表单exec form</i> 。实际上有 <strong>三种</strong> 不同的CMD表单，执行表单是常用的，阅读 <a href="https://docs.docker.com/engine/reference/builder/#cmd">documentation</a> 获取更多信息。</p>
+<!-- -->
+<p>我们构建镜像时运行  <em>docker build . -t hello-front</em> ， 并运行<em>docker run -p 5000:3000 hello-front</em> 。应用会在浏览器中 <a href="http://localhost:3000">http://localhost:3000</a> 看到 。</p>
+<h3>Using multiple stages</h3>
+<p>使用多阶段构建</p>
+<!-- -->
+<p>虽然serve 是一个 <i>可行的</i> 选项，但我们能进一步优化。容器中一个重要的目标就是创建的镜像不包含任何不相关的内容。镜像有较小的依赖，就不容易被破坏，也不会随着时间流逝而变得脆弱。</p>
+<!-- -->
+<p>多阶段构建 <a href="https://docs.docker.com/develop/develop-images/multistage-build/">Multi-stage builds</a>是设计于将构建流程切分成多个不同的阶段，从而限制镜像文件在不同阶段传递。这就使得限制镜像的大小变得可能，因为并不是结果镜像需要所有生产流水线中的所有构建。较小的镜像会更快地上传和下载，而且能减少你软件的脆弱性。</p>
+<!-- -->
+<p>利用多阶段构建，像 <a href="https://en.wikipedia.org/wiki/Nginx">nginx</a> 这样久经考验的真正解决方案可以用于服务静态文件，免除了许多头疼的问题。 Docker Hub <a href="https://hub.docker.com/_/nginx">page for nginx</a>  告诉我们打开端口并“托管一些简单镜头内容”所需要的信息。</p>
+<!-- -->
+<p>让我们使用之前的Dockerfile，并将FROM 改写来引入阶段名称。</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token comment"># The first FROM is now a stage called build-stage</span>
+<span class="gatsby-highlight-code-line"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16 AS build<span class="token punctuation">-</span>stage</span>
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token keyword">RUN</span> npm ci
+
+<span class="token keyword">RUN</span> npm run build
+
+<span class="token comment"># This is a new stage, everything before this is gone, except the files we want to COPY</span>
+<span class="gatsby-highlight-code-line"><span class="token keyword">FROM</span> nginx<span class="token punctuation">:</span>1.20<span class="token punctuation">-</span>alpine</span>
+<span class="token comment"># COPY the directory build from build-stage to /usr/share/nginx/html</span>
+<span class="token comment"># The target location here was found from the docker hub page</span>
+<span class="gatsby-highlight-code-line"><span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=build<span class="token punctuation">-</span>stage /usr/src/app/build /usr/share/nginx/html</span></code></pre></div>
+<!-- -->
+<p>我们已经声明了<i>另一个阶段</i>，并且只将第一阶段中相关文件（包含静态内容的<i>build</i>目录）移动了。</p>
+<!-- -->
+<p>在build之后，该镜像已经可以服务静态内容了。Nginx 的默认端口是 80，所以像 <em>-p 8000:80</em> 这样的操作会起作用，所以运行的参数会在后续进行调整</p>
+<!-- -->
+<p>多阶段构建还包括一些可能会影响您构建的内部优化。 例如，多阶段构建跳过未使用的阶段。 如果我们希望使用一个阶段来替换构建管道的一部分，例如测试或通知，我们必须将 <strong>some</strong> 数据传递给下面的阶段。 在某些情况下，这是合理的：将代码从测试阶段复制到构建阶段，确保您正在构建经过测试的代码。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercises 12.13 - 12.14.</h3>
+<p>练习12.13 -12.14.</p>
+<h4>Exercise 12.13: Todo application frontend</h4>
+<p>练习12.13 Todo 应用前端</p>
+<!-- -->
+<p>终于，我们要开始处理 todo 的前端了。查看 todo-app/todo-frontend 并通读README。</p>
+<!-- -->
+<p>在容器外运行前端，确保它于后端是能工作的。</p>
+<!-- -->
+<p>创建 <i>todo-app/todo-frontend/Dockerfile</i>  来容器化应用，并使用 <a href="https://docs.docker.com/engine/reference/builder/#env">ENV</a> 指令来传递 <em>REACT_APP_BACKEND_URL</em> 给应用，与后端进行运行。后端仍然应该在容器外部运行。</p>
+<h4>Exercise 12.14: Testing during the build process</h4>
+<p>练习12.14 在构建过程中测试</p>
+<!-- -->
+<p>多阶段构建一个有趣的使用场景是使用单独的构建阶段来 <a href="https://docs.docker.com/language/nodejs/run-tests/">testing</a> 。如果测试阶段失败，整个构建过程也会失败。注意在构建镜像的过程中，将 <i>所有测试</i> 移动到待完成并非一个好主意，但是将 <i>一些</i> 与容器化相关的测试放进来就不错。</p>
+<!-- -->
+<p>提取出一个 <i>Todo</i> 组件来代表单独的todo。为该组件写一个测试放到构建流程中。</p>
+<!-- -->
+<p>利用 <em>CI=true npm test</em> 来运行测试， 否则 create-react-app 会开始监控你的修改，整个工作流会卡住。</p>
+<!-- -->
+<p>你可以增加一个新的构建阶段来测试。如果这么做了，记得阅读练习12.13前的最后一段。</p>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Development in containers</h3>
+<p>在容器中开发</p>
+<!-- -->
+<p>让我们将整个 todo 应用程序开发移到容器中。 之所以要这样做，有几个原因：</p>
+<ul>
+<li>保持开发和生产环境相似，避免只出现在生产环境中的bug</li>
+<li>避免开发者与自身环境差异导致应用开发困难</li>
+<li>帮助新团队成员加入，让他们只需要安装容器运行时，不再需要安装其他的了</li>
+</ul>
+<!-- -->
+<p>所有这些都是不错的理由。作为代价是我们由于不再像之前那样工作，因此会带来些不习惯的地方。我们至少需要做两件事才能将应用程序移动到容器中：</p>
+<ul>
+<li>以开发模式启动应用程序</li>
+<li>使用 VSCode 访问文件</li>
+</ul>
+<!-- -->
+<p>让我们从前端开始。 由于 Dockerfile 与生产 Dockerfile 有很大不同，让我们创建一个名为<i>dev.Dockerfile</i> 的新文件。</p>
+<!-- -->
+<p>在开发模式下启动 create-react-app 应该很容易，让我们从以下开始：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token comment"># Change npm ci to npm install since we are going to be in development mode</span>
+<span class="token keyword">RUN</span> npm install
+
+<span class="token comment"># npm start is the command to start the application in development mode</span>
+<span class="token keyword">CMD</span> <span class="token punctuation">[</span><span class="token string">&quot;npm&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;start&quot;</span><span class="token punctuation">]</span></code></pre></div>
+<!-- -->
+<p>构建阶段，标志 <code class="language-text">-f</code> 将用于告诉使用哪个文件，否则默认为 Dockerfile：<em>docker build -f ./dev.Dockerfile -t hello-front-dev .</em> 会构建镜像。 create-react-app 将在端口 3000 中提供服务，因此您可以在容器启动后测试端口是否被发布。</p>
+<!-- -->
+<!-- -->
+<!-- -->
+<p>第二个任务，使用 VSCode 访问文件，还没有完成。 至少有两种方法可以做到这一点：</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/remote/containers">The Visual Studio Code Remote - Containers extension</a> </li>
+<li>挂载卷，和我们用来保存数据库数据的东西一样</li>
+</ul>
+<!-- -->
+<p>让我们来看看后者，因为大家还可能使用别的编辑器。 让我们使用标志 <em>-v</em> 进行试运行，如果可行，那么我们将把配置移到 docker-compose 文件中。 要使用 <em>-v</em>，我们需要告诉它当前目录。 <em>pwd</em> 命令能打印出当前文件夹的路径，请尝试使用 <em>echo $(pwd)</em>。 我们可以使用它作为 <em>-v</em> 参数的左侧将当前目录映射到容器内部，或者你可以使用文件夹的全路径。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker run -p <span class="token number">3000</span>:3000 -v <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>:/usr/src/app/&quot;</span> hello-front-dev
+
+  Compiled successfully<span class="token operator">!</span>
+
+  You can now view hello-front <span class="token keyword">in</span> the browser.</code></pre></div>
+<!-- -->
+<p>现在我们可以简单编辑 <i>src/App.js</i> ，内容会热加载到浏览器中。</p>
+<!-- -->
+<p>下面我们将配置迁移到 <i>docker-compose.yml</i> 。 该文件应该会在项目的根目录</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev
+    <span class="token key atrule">build</span><span class="token punctuation">:</span>
+      <span class="token key atrule">context</span><span class="token punctuation">:</span> . <span class="token comment"># The context will pick this directory as the &quot;build context&quot;</span>
+      <span class="token key atrule">dockerfile</span><span class="token punctuation">:</span> dev.Dockerfile <span class="token comment"># This will simply tell which dockerfile to read</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./<span class="token punctuation">:</span>/usr/src/app <span class="token comment"># The path can be relative, so ./ is enough to say &quot;the same location as the docker-compose.yml&quot;</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span><span class="token number">3000</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev <span class="token comment"># This will name the container hello-front-dev</span></code></pre></div>
+<!-- -->
+<p>通过这个配置，此时我们运行 <em>docker-compose up</em> ，会启动一个应用，处于开发模式。你不用安装node 来开发了。</p>
+<!-- -->
+<p>安装新的依赖对开发来说是一件头疼的事情。一个好的实践是将其安装到容器 <strong>内部</strong>。 因此不必  <em>npm install axios</em> ，你只需在容器中运行 <em>docker exec hello-front-dev npm install axios</em> ，或者将其放到 package.json  文件并再次运行 <em>docker build</em>。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercise 12.15</h3>
+<p>练习 12.15</p>
+<h4>Exercise 12.15: Set up a frontend development environment</h4>
+<p>练习 12.15: 构建一个前端开发环境</p>
+<!-- -->
+<p>创建一个 <i>todo-frontend/docker-compose.dev.yml</i> 文件，并使用卷来启动一个开发的前端todo 应用，跑在容器 <i>内部</i></p>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Communication between containers in a docker network</h3>
+<p>容器和docker 网络进行通信</p>
+<!-- -->
+<p>docker-compose 工具建立起一个网络，连通容器和一个DNS 来简单地连接两个容器到其他容器。让我们添加一个服务到docker-compose 我们可以看到网络和DNS如何工作。</p>
+<!-- -->
+<p><a href="https://www.busybox.net/">Busybox</a>  是一个小型、可运行、多工具的镜像。被称为“嵌入Linux 的瑞士军刀”，我们可以使用它，利用其优势。</p>
+<!-- -->
+<p>Busybox 可以用来帮助我们 debug 我们的配置。因此如果在后续的练习中卡住了，你可以使用 Busybox 来找到哪里工作哪里不工作了。让我们使用它来探索我们刚说到的内容，该容器存在于一个网络中，你可以方便地连接。Busybox 可以通过修改 <i>docker-compose.yml</i>  文件添加：</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev
+    <span class="token key atrule">build</span><span class="token punctuation">:</span>
+      <span class="token key atrule">context</span><span class="token punctuation">:</span> .
+      <span class="token key atrule">dockerfile</span><span class="token punctuation">:</span> dev.Dockerfile
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./<span class="token punctuation">:</span>/usr/src/app
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span><span class="token number">3000</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev
+<span class="gatsby-highlight-code-line">  <span class="token key atrule">debug-helper</span><span class="token punctuation">:</span></span><span class="gatsby-highlight-code-line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> busybox</span></code></pre></div>
+<!-- -->
+<p>Busybox 容器不会有任何进程在运行，所以我们可以在那里 <em>exec</em> 。也由于此，<em>docker-compose up</em> 的输出会类似如下内容</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">$ docker-compose up
+  Pulling debug-helper (busybox:)...
+  latest: Pulling from library/busybox
+  8ec32b265e94: Pull complete
+  Digest: sha256:b37dd066f59a4961024cf4bed74cae5e68ac26b48807292bd12198afa3ecb778
+  Status: Downloaded newer image for busybox:latest
+  Starting hello-front-dev          ... done
+  Creating react-app_debug-helper_1 ... done
+  Attaching to react-app_debug-helper_1, hello-front-dev
+  react-app_debug-helper_1 exited with code 0
+  
+  hello-front-dev | 
+  hello-front-dev | &gt; react-app@0.1.0 start
+  hello-front-dev | &gt; react-scripts start</code></pre></div>
+<!-- -->
+<p>这验证了我们的想法，它仅是一个工具箱。让我们用它来发送一个请求到hello-front-dev 并看DNS如何工作。由于hello-front-dev 在运行，我们可以使用 <a href="https://en.wikipedia.org/wiki/Wget">wget</a> ，因为它在 Busybox 中预装了，可以从debug-helper 到 hello-front-dev 发送一个请求</p>
+<!-- -->
+<p>利用 Docker Compose 我们可以使用 <em>docker-compose run SERVICE COMMAND</em> 来运行一个特定的服务。wget 命令需要参数 <em>-O</em> 和 <em>-</em> 来输出响应到stdout 。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker-compose run debug-helper <span class="token function">wget</span> -O - http://hello-front-dev:3000
+
+  Creating react-app_debug-helper_run <span class="token punctuation">..</span>. <span class="token keyword">done</span>
+  Connecting to hello-front-dev:3000 <span class="token punctuation">(</span><span class="token number">172.26</span>.0.2:3000<span class="token punctuation">)</span>
+  writing to stdout
+  <span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE html<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>html <span class="token assign-left variable">lang</span><span class="token operator">=</span><span class="token string">&quot;en&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>meta <span class="token assign-left variable">charset</span><span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token punctuation">..</span>.</code></pre></div>
+<!-- -->
+<p>该URL 是很有趣的一部分。我们简单地说连接到另一个  <i>hello-front-dev</i> 服务的某个端口 3000。  <i>hello-front-dev</i> 是容器的名字，是在 docker-compose 文件中的被我们定义的 <em>container_name</em> 。端口是容器中可使用的端口，该端口不必暴露给网络中的其他服务。 docker-compose 文件中的 &quot;ports&quot; 仅仅是为了外部访问</p>
+<!-- -->
+<p>让我们对 <i>docker-compose.yml</i> 中的端口配置做一些修改来验证这一点：</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev
+    <span class="token key atrule">build</span><span class="token punctuation">:</span>
+      <span class="token key atrule">context</span><span class="token punctuation">:</span> .
+      <span class="token key atrule">dockerfile</span><span class="token punctuation">:</span> dev.Dockerfile
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./<span class="token punctuation">:</span>/usr/src/app
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+<span class="gatsby-highlight-code-line">      <span class="token punctuation">-</span> 3210<span class="token punctuation">:</span><span class="token number">3000</span></span>    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> hello<span class="token punctuation">-</span>front<span class="token punctuation">-</span>dev
+
+  <span class="token key atrule">debug-helper</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> busybox</code></pre></div>
+<!-- -->
+<p>有了这个 <em>docker-compose up</em>  应用可以在 <i>宿主机</i> 的 <a href="http://localhost:3210">http://localhost:3210</a> 访问。 同样，<em>docker-compose run debug-helper wget -O - <a href="http://hello-front-dev:3000">http://hello-front-dev:3000</a></em> 也好使，因为在docker 网络中它使用的仍然是3000端口。</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/ecd3aa14ff1220e3f47ddd6b63116a48/efc6e/busybox_networking_drawio.png"/></picture>
+<!-- -->
+<p>如上图所示， <em>docker-compose run</em> 会询问 debug-helper 使用网络发送请求。浏览器会在宿主机网络外发送请求。 </p>
+<!-- -->
+<p>既然你已经知道了在 <i>docker-compose.yml</i> 找到其他服务是多么方便，而且没什么可以debug的了，我们可以在<i>docker-compose.yml</i>删除 debug-helper 并回退端口到 3000:3000 状态。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercise 12.16</h3>
+<p>练习12.16</p>
+<h4>Exercise 12.16: Run todo-back in a development container</h4>
+<p>练习12.16：将 todo-后端跑在开发容器中</p>
+<!-- -->
+<p>使用挂载卷和Nodemon 来开启todo 应用后端的开发模式，让其运行在容器 <i>内部</i>。 创建一个 <i>todo-backend/dev.Dockerfile</i> 并编辑 <i>todo-backend/docker-compose.dev.yml</i> 。</p>
+<!-- -->
+<p>你需要重新回想后台与MongoDB/Redis 的连接。多亏docker-compose 可以包含传递给应用的环境变量。</p>
+<div class="gatsby-highlight" data-language="yaml"><pre><code class="language-yaml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">server</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> <span class="token punctuation">...</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token punctuation">...</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token punctuation">...</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span> 
+      <span class="token punctuation">-</span> REDIS_URL=//localhost<span class="token punctuation">:</span><span class="token number">3000</span>
+      <span class="token punctuation">-</span> MONGO_URL=mongodb<span class="token punctuation">:</span>//the_username<span class="token punctuation">:</span>the_password@localhost<span class="token punctuation">:</span>3456/the_database</code></pre></div>
+<!-- -->
+<p>URL(localhost) 是故意写错的，你需要改成正确的。记得 <i>随时查看console中发生了什么</i>。 如果崩溃了，错误信息是崩溃的线索</p>
+<!-- -->
+<p>一个可能有帮助的图片展示了docker 网络中的连接。</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/e866965c916d7f8e5a8515d3aa16bc44/85ff8/ex_12_15_backend_drawio.png"/></picture>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Communications between containers in a more ambitious environment</h3>
+<p>容器与更复杂的环境进行通信</p>
+<!-- -->
+<!-- -->
+<p>接下来我们将向我们的 docker-compose.yml 添加一个反向代理<a href="https://en.wikipedia.org/wiki/Reverse_proxy">reverse proxy</a>。 根据维基百科的定义</p>
+<blockquote>
+<p><i>反向代理是一种代理服务器，它作为客户端侧从一个或多个服务器获取资源。这些资源返回给真正的客户端，就好像他们是从反向服务器自己那里来的一样。</i></p>
+</blockquote>
+<!-- -->
+<p>在我们的例子中，反向代理会作为我们应用程序单一入口点，最终目标是在反向代理服务器后端设置React 前端和Express 后端。</p>
+<!-- -->
+<p>关于反向代理的实现，有多种不同的选择：例如Traefik、Caddy、Nginx 和 Apache（按初始版本从新到旧排序）。</p>
+<!-- -->
+<p>我们选择 <a href="https://hub.docker.com/_/nginx">Nginx</a> 。在项目根目录中创建一个文件 <i>nginx.conf</i> 并以此模板进行配置。 我们需要做一些小的编辑才能让我们的应用程序运行：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash"><span class="token comment"># events is required, but defaults are ok</span>
+events <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+<span class="token comment"># A http server, listening at port 80</span>
+http <span class="token punctuation">{</span>
+  server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+
+    <span class="token comment"># Requests starting with root (/) are handled</span>
+    location / <span class="token punctuation">{</span>
+      <span class="token comment"># The following 3 lines are required for the hot loading to work (websocket).</span>
+      proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+      proxy_set_header Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
+      proxy_set_header Connection <span class="token string">&#x27;upgrade&#x27;</span><span class="token punctuation">;</span>
+      
+      <span class="token comment"># Requests are directed to http://localhost:3000</span>
+      proxy_pass http://localhost:3000<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<!-- -->
+<p>然后将 Nginx 添加到 <i>docker-compose.yml</i> 文件中。 按照 docker hub 页面中的指示添加一个卷，其中右侧是 <em>:/etc/nginx/nginx.conf:ro</em> ，最后的 ro 声明该卷将为 <i>read-only</i>。</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml">  <span class="token key atrule">nginx</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.20.1
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./nginx.conf<span class="token punctuation">:</span>/etc/nginx/nginx.conf<span class="token punctuation">:</span>ro
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 8080<span class="token punctuation">:</span><span class="token number">80</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> reverse<span class="token punctuation">-</span>proxy</code></pre></div>
+<!-- -->
+<p>添加后，我们可以运行 <em>docker-compose up</em>  并查看会发生什么。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container <span class="token function">ls</span>
+CONTAINER ID   IMAGE             COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+a02ae58f3e8d   nginx:1.20.1      <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   <span class="token number">4</span> minutes ago   Up <span class="token number">4</span> minutes   <span class="token number">0.0</span>.0.0:8080-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp, :::8080-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp       reverse-proxy
+5ee0284566b4   hello-front-dev   <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   <span class="token number">4</span> minutes ago   Up <span class="token number">4</span> minutes   <span class="token number">0.0</span>.0.0:3000-<span class="token operator">&gt;</span><span class="token number">3000</span>/tcp, :::3000-<span class="token operator">&gt;</span><span class="token number">3000</span>/tcp   hello-front-dev</code></pre></div>
+<!-- -->
+<p>连接到 <a href="http://localhost:8080">http://localhost:8080</a> 将导致一个具有 502 状态的熟悉页面。</p>
+<!-- -->
+<p>这是因为将请求定向到 <a href="http://localhost:3000">http://localhost:3000</a> 导致无处可去，因为 Nginx 容器没有在端口 3000 中运行任何应用程序。根据定义，localhost 是指用于访问它的当前计算机。 对于容器，每个容器的 localhost 都是唯一的，从而导致容器本身。</p>
+<!-- -->
+<p>让我们通过进入 Nginx 容器并使用 curl 向应用程序本身发送请求来测试, 我们使用curl ，它类似wget，不过不需要任何参数：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker <span class="token builtin class-name">exec</span> -it reverse-proxy <span class="token function">bash</span>  
+
+root@374f9e62bfa8:/<span class="token comment"># curl http://localhost:80</span>
+  <span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span><span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span class="token number">502</span> Bad Gateway<span class="token operator">&lt;</span>/title<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span>
+  <span class="token punctuation">..</span>.</code></pre></div>
+<!-- -->
+<p>为了帮助我们，docker-compose 在运行 <em>docker-compose up</em> 时创建了一个网络。并将 <i>docker-compose.yml</i> 中所有的容器加到了这个网络中。DNS 确保我们可以找到其他容器。容器被给了两个名字：服务名和容器名。</p>
+<!-- -->
+<p>由于我们现在在容器内，我们还可以测试 DNS！ 让我们在 3000 端口curl服务名称（app）</p>
+<div class="gatsby-highlight" data-language="html"><pre><code class="language-html">root@374f9e62bfa8:/# curl http://app:3000
+  <span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    ...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span>
+      <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>description<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Web site created using create-react-app<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+    ...</code></pre></div>
+<!-- -->
+<!-- -->
+<p>就是这样！ 让我们用那个替换 nginx.conf 中的 proxy_pass 地址。</p>
+<p>如果还是遇到503，先确定create-react-app是否已经建好了。你可以检查一下 docker-compose up 的输出日志。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h4>Exercises 12.17. - 12.19.</h4>
+<p>练习 12.17. - 12.19.</p>
+<h4>Exercise 12.17: Setup Nginx in front of todo-front</h4>
+<p>练习 12.17: 在todo-前端前面创建Nginx</p>
+<!-- -->
+<p>我们将要把todo 的前端和后端应用放到nginx 后面。 我们首先创建一个新的 docker-compose 文件 <i>todo-app/docker-compose.dev.yml</i> 和 <i>todo-app/nginx.conf</i>。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">todo-app
+├── todo-frontend
+├── todo-backend
+<span class="gatsby-highlight-code-line">├── nginx.conf</span><span class="gatsby-highlight-code-line">└── docker-compose.dev.yml</span></code></pre></div>
+<!-- -->
+<p>将nginx 和 todo 前端利用 <i>todo-app/todo-frontend/dev.Dockerfile</i> 文件进行构建，构建到  docker-compose.dev.yml。</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/a5c3b8d70abca3569ed532e053af7bc7/15d25/ex_12_16_nginx_front.png"/></picture>
+<h4>Exercise 12.18: Setup Nginx in front of todo-back</h4>
+<p>练习12.18 在todo 后端应用前搭建Nginx</p>
+<!-- -->
+<p>将nginx 和 todo 后端以开发模式添加到开发的 <i>todo-app/docker-compose.dev.yml</i>。</p>
+<!-- -->
+<p>向 <i>nginx.conf</i>  添加一个新位置，以便将 /api 的请求代理到后端。 像这样应该可以解决问题：</p>
+<div class="gatsby-highlight" data-language="conf"><pre><code class="language-conf">  server {
+    listen 80;
+
+    # Requests starting with root (/) are handled
+    location / {
+      # The following 3 lines are required for the hot loading to work (websocket).
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection &#x27;upgrade&#x27;;
+      
+      # Requests are directed to http://localhost:3000
+      proxy_pass http://localhost:3000;
+    }
+
+    # Requests starting with /api are handled
+    location /api {
+      ...
+    }
+  }</code></pre></div>
+<!-- -->
+<p><em>proxy_pass</em> 指令有一个有趣的特性，带有尾部斜杠。 由于我们使用路径 <em>/api</em> 作为位置，但后端应用程序仅在路径 <em>/</em> 或 <em>/todos</em> 中响应，我们希望从请求中删除 <em>/api</em>。 换句话说，即使浏览器将向 <em>/api/todos/1</em> 发送 GET 请求，我们也希望 Nginx 将请求代理到 <em>/todos/1</em>。 这是通过在 <em>proxy_pass</em> 末尾添加一个斜杠 <em>/</em> 到 URL 来完成的。</p>
+<!-- -->
+<p>有一个 <a href="https://serverfault.com/questions/562756/how-to-remove-the-path-with-an-nginx-proxy-pass">常见问题</a></p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/356d6b54ad3287d7e031093366b578bf/ace37/nginx_trailing_slash_stackoverflow.png"/></picture>
+<!-- -->
+<p>如果你有疑问，这里展示了我们所找到的一些帮助材料：</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/1e05f9f899e31b8ec9044169ab3fb400/15d25/ex_12_17_nginx_back.png"/></picture>
+<h4>Exercise 12.19: Connect todo-front to todo-back</h4>
+<p>练习 12.19: 将 todo-front 连接到 todo-back</p>
+<!-- -->
+<p>确保 todo-front 与 todo-back 一起工作。 它将需要更改 <em>REACT_APP_BACKEND_URL</em> 环境变量。</p>
+<!-- -->
+<p>如果您在之前的练习中已经完成了这项工作，则可以跳过此部分。</p>
+<!-- -->
+<!-- -->
+<!-- -->
+<p>确保开发环境当前完全可用：</p>
+<ul>
+<li>所有todo 的功能可用</li>
+<li>可以编辑源码文件，<i>并且</i> 变化可以通过热加载生效，同时检查前端和后端。</li>
+</ul>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Tools for Production</h3>
+<p>生产工具</p>
+<!-- -->
+<p>容器是在开发中使用的有趣工具，但它们的最佳用例是在生产环境中。 有许多比 docker-compose 更强大的工具可以在生产中运行容器。</p>
+<!-- -->
+<p>重量级容器编排工具，例如 Kubernetes 这样的工具使我们能够在一个全新的层面上管理容器。 这些工具基本上隐藏了物理机器，让我们的开发人员不必担心基础设施。</p>
+<!-- -->
+<p>如果您有兴趣更深入地了解容器，请访问 <a href="https://devopswithdocker.com">DevOps with Docker</a> 课程，您可以在 <a href="https://devopswithkubernetes.com">DevOps with Kubernetes</a> 获得5个学分。 您现在应该具备完成这两项任务的技能。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercises 12.20.-12.22.</h3>
+<p>练习 12.20.-12.22.</p>
+<h4>Exercise 12.20:</h4>
+<p>练习 12.20：</p>
+<!-- -->
+<p>创建一个生产的 <i>todo-app/docker-compose.yml</i> ，包含所有的服务，Nginx，todo 前端 、后端、MongoDB 以及 Redis。使用Dockerfile 而不是 <i>dev.Dockerfiles</i> ，并确保应用跑在了生产模式下。</p>
+<!-- -->
+<p>请用以下的结构来完成练习：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">todo-app
+├── todo-frontend
+├── todo-backend
+├── nginx.conf
+├── docker-compose.dev.yml
+<span class="gatsby-highlight-code-line">└── docker-compose.yml</span></code></pre></div>
+<h4>Exercise 12.21:</h4>
+<p>练习 12.21：</p>
+<!-- -->
+<p>建一个类似的容器化开发环境到 <i>你自己的</i> 全栈 app 中，可以是业余时间通过课程完成的。应当把你的应用按如下架构进行提交：</p>
+<div class="gatsby-highlight" data-language="console"><pre><code class="language-console">└── my-app
+    ├── frontend
+    |    └── dev.Dockerfile
+    ├── backend
+    |    └── dev.Dockerfile
+    └── docker-compose.dev.yml</code></pre></div>
+<h4>Exercise 12.22:</h4>
+<p>练习 12.22：</p>
+<!-- -->
+<p>建一个类似的容器化开发环境到 <i>你自己的</i> 全栈 app 中，可以是业余时间通过课程完成的。</p>
+<!-- -->
+<p>Structure the app to submission repository as follows:
+并为自己的全栈app创建一个 <i>生产构建</i> 来完成本章节
+提交到仓库的应用应该像如下构建：</p>
+<div class="gatsby-highlight" data-language="console"><pre><code class="language-console">└── my-app
+    ├── frontend
+    |    ├── dev.Dockerfile
+    |    └── Dockerfile
+    ├── backend
+    |    └── dev.Dockerfile
+    |    └── Dockerfile
+    ├── docker-compose.dev.yml
+    └── docker-compose.yml</code></pre></div>
+<h3>Submitting exercises and getting the credits</h3>
+<p>提交练习并获得积分</p>
+<!-- -->
+<p>这是本章节的最后一个练习。是时候将你的代码提交到Github 并在 <a href="https://studies.cs.helsinki.fi/stats/courses/fs-containers">exercise submission system</a> 将你所完成的练习标记为已完成了</p>
+<!-- -->
+<p>向之前的章节那样提交练习，但与0到7章不同，该提交到自己的 <a href="https://studies.cs.helsinki.fi/stats/courses/fs-containers">course instance</a> 。记住完成 <i>所有的练习</i> 来通过本章。</p>
+<!-- -->
+<p>一旦你完成了练习的提交并希望获得积分。在完成课程的提交后通过练习提交系统让我们知道。</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/d2a0d8c8142ce4113bdf5bfec2d1dd37/5a190/21.png"/></picture>
+<!-- -->
+<p>注意  &quot;exam done in Moodle&quot; 提示是指的 <a href="/en/part0/general_info#sign-up-for-the-exam">Full Stack Open course&#x27;s exam</a>，需要在获得本章积分之前完成。</p>
+<!-- -->
+<p><strong>注意</strong> 你需要注册相关的课程章节来获得积分，可以查看 <a href="/en/part0/general_info#parts-and-completion">这里</a> 来获得更多信息。</p>
+<!-- -->
+<p>你可以点击小旗图标下载认证证书来完成本章节。小旗图标代表认证的语言。</p>
+</div></div></div>
+</div></div><div class="container spacing element--flex element--centered"><a class="edit-link" target="__BLANK" href="https://github.com/RichardStark/fullstack-hy2020.github.io/edit/source/src/content/12/zh/part12c.md"><span>对讲课材料提出建议</span></a></div><div class="container spacing spacing--after-large prev-next__container "><a class="col-4--mobile push-right-1 prev" href="/zh/part12/构建配置环境"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->12b</p><b>上一部分</b></div></a><a class="col-4--mobile push-left-1 next" href="/zh/part13"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->13</p><b>下一部分</b></div></a></div></div><div class="container spacing--after-small spacing--mobile element--flex" id="footer"><div class="col-5 push-right-3 col-10--mobile order-2--mobile order-2--tablet footer__links element--flex element--space-between"><a href="https://www.helsinki.fi/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="/static/uoh_centre-3689cf9983a2ebc8089c8f078a9c4769.svg" alt="Helsingin yliopiston logo"/></div></div></a><a href="https://www.houston-inc.com/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQ3cHgiIGhlaWdodD0iODJweCIgdmlld0JveD0iMCAwIDI0NyA4MiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTMuMiAoNzI2NDMpIC0gaHR0cHM6Ly9za2V0Y2hhcHAuY29tIC0tPgogICAgPHRpdGxlPmxvZ28vaG91c3RvbjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iMCAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAzNi40NjU0MzgxIDAgMzYuNDY1NDM4MSI+PC9wb2x5Z29uPgogICAgPC9kZWZzPgogICAgPGcgaWQ9ImxvZ28vaG91c3RvbiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImhvdXN0b25fc2ltcGxlLmVwcy1jb3B5LTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LjU4MTg5MywgMjMuMjYzMDQwKSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgPGcgaWQ9IkNsaXAtMiI+PC9nPgogICAgICAgICAgICA8cGF0aCBkPSJNODIuODA1MTI5OCwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDI1LjUzNjU1MDkgTDg1Ljk5MzYyOSwyNS41MzY1NTA5IEw4NS45OTM2MjksMTMuNTA2NjYwMyBMOTAuNDA2NTQ5MywxMy41MDY2NjAzIEw5MC40MDY1NDkzLDEwLjQ0NTY3ODQgTDc4LjM3NTEwMzYsMTAuNDQ1Njc4NCBMNzguMzc1MTAzNiwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDEzLjUwNjY2MDMgWiBNOTYuNDkxMDQ5NSwxNy45NjM2ODg1IEM5Ni40OTEwNDk1LDIwLjU1OTU1NzIgOTguMzE3ODU1NywyMi43MDc5ODQyIDEwMC44ODYxNTcsMjIuNzA3OTg0MiBDMTAzLjQ1NDg4MiwyMi43MDc5ODQyIDEwNS4yNDcxOTQsMjAuNTk1NDY1NyAxMDUuMjQ3MTk0LDE4LjAxNzk3NTMgTDEwNS4yNDcxOTQsMTguMDAwMDIxMSBDMTA1LjI0NzE5NCwxNS40MDQyOTM3IDEwMy40MjA1MjksMTMuMjU1ODY2NyAxMDAuODUyMjI4LDEzLjI1NTg2NjcgQzk4LjI4MzUwMjMsMTMuMjU1ODY2NyA5Ni40OTEwNDk1LDE1LjM2ODM4NTMgOTYuNDkxMDQ5NSwxNy45NDU3MzQzIEw5Ni40OTEwNDk1LDE3Ljk2MzY4ODUgWiBNOTMuMTQ3MDQxMywxOC4wMTc5NzUzIEw5My4xNDcwNDEzLDE3Ljk4MjA2NjkgQzkzLjE0NzA0MTMsMTMuNjg1NDk1NiA5Ni40MDQ4MTI3LDEwLjE3NjkzMDYgMTAwLjg4NjE1NywxMC4xNzY5MzA2IEMxMDUuMzY3OTI1LDEwLjE3NjkzMDYgMTA4LjU5MTM0MywxMy42NDk3Mjg1IDEwOC41OTEzNDMsMTcuOTQ1NzM0MyBMMTA4LjU5MTM0MywxNy45NjM2ODg1IEMxMDguNTkxMzQzLDIyLjI2MDI1OTggMTA1LjMzMzU3MiwyNS43Njg4MjQ3IDEwMC44NTIyMjgsMjUuNzY4ODI0NyBDOTYuMzcwMzE4LDI1Ljc2ODgyNDcgOTMuMTQ3MDQxMywyMi4zMTQxMjI0IDkzLjE0NzA0MTMsMTguMDE3OTc1MyBMOTMuMTQ3MDQxMywxOC4wMTc5NzUzIFogTTcwLjQxMTkxMzcsMjIuNzk3MDQ4NSBDNjguNzU2ODc0MiwyMi43OTcwNDg1IDY3LjM3ODIxNjYsMjIuMDgxMjgzMSA2Ni4wNjg0MDcsMjAuOTcxNzk3NCBMNjQuMTcyMTg3MiwyMy4zMTY0NDg0IEM2NS45MTMxODA4LDI0LjkyNzk0NTQgNjguMTM2Njc2MiwyNS43MzMzNDA0IDcwLjM0MzA2NTYsMjUuNzMzMzQwNCBDNzMuNDgwMTA1NSwyNS43MzMzNDA0IDc1LjY2OTI0NzYsMjQuMDUwMTY4IDc1LjY2OTI0NzYsMjEuMDYxMDAzIEw3NS42NjkyNDc2LDIxLjAyNTA5NDUgQzc1LjcyMTEzMSwxOC4zOTM0NTg4IDc0LjA0ODU2MTUsMTcuMzAxNzg1OCA3MS4xMDExMDExLDE2LjQ5NTgyNTMgQzY4LjU4NDY4MzQsMTUuODMzOTIyNiA2Ny45NjM5MTk5LDE1LjUxMTMxMjIgNjcuOTYzOTE5OSwxNC41MDg5ODYyIEw2Ny45NjM5MTk5LDE0LjQ3MzA3NzggQzY3Ljk2MzkxOTksMTMuNzM4OTM0MSA2OC42MDIyMTM1LDEzLjE2NjY2MTEgNjkuODI1NjQ0OSwxMy4xNjY2NjExIEM3MS4wNDk2NDE4LDEzLjE2NjY2MTEgNzIuMzA3OTkyMSwxMy43MjA5Nzk5IDczLjYwMDgzNywxNC42NTIwNTQ1IEw3NS4yNTU1OTM4LDEyLjE0NTk1NjkgQzczLjc4OTk5MjUsMTAuOTEwNjUwMiA3MS45ODA3MTY0LDEwLjIzMDM2OTIgNjkuODYwNTYzNywxMC4yMzAzNjkyIEM2Ni44OTU3MTQ3LDEwLjIzMDM2OTIgNjQuNzc1NTYyLDEyLjAzODY1NTcgNjQuNzc1NTYyLDE0Ljc3NzU5MjYgTDY0Ljc3NTU2MiwxNC44MTMwNzY5IEM2NC43NzU1NjIsMTcuODAyNjY2MSA2Ni42NzEwNzQ5LDE4LjY0NDUzNSA2OS41ODQxODE5LDE5LjQzMjExNzMgQzcyLjAxNDY0NTYsMjAuMDc2NjMxMiA3Mi41MTQ2Nzc2LDIwLjUwNjI2MDEgNzIuNTE0Njc3NiwyMS4zNDc3MDQ5IEw3Mi41MTQ2Nzc2LDIxLjM4MzA0NzkgQzcyLjUxNDY3NzYsMjIuMjYwMjU5OCA3MS43MjIyODg4LDIyLjc5NzA0ODUgNzAuNDExOTEzNywyMi43OTcwNDg1IEw3MC40MTE5MTM3LDIyLjc5NzA0ODUgWiBNMzEuMzM2NDY5NywxNy45NjM2ODg1IEMzMS4zMzY0Njk3LDIwLjU1OTU1NzIgMzMuMTYzNywyMi43MDc5ODQyIDM1LjczMTg1OTksMjIuNzA3OTg0MiBDMzguMzAwMTYxMSwyMi43MDc5ODQyIDQwLjA5MjQ3MjYsMjAuNTk1NDY1NyA0MC4wOTI0NzI2LDE4LjAxNzk3NTMgTDQwLjA5MjQ3MjYsMTguMDAwMDIxMSBDNDAuMDkyNDcyNiwxNS40MDQyOTM3IDM4LjI2NTI0MjMsMTMuMjU1ODY2NyAzNS42OTY5NDEsMTMuMjU1ODY2NyBDMzMuMTI5MjA1MywxMy4yNTU4NjY3IDMxLjMzNjQ2OTcsMTUuMzY4Mzg1MyAzMS4zMzY0Njk3LDE3Ljk0NTczNDMgTDMxLjMzNjQ2OTcsMTcuOTYzNjg4NSBaIE0yOC4wMDk3MDg5LDE4LjAxNzk3NTMgTDI4LjAwOTcwODksMTcuOTgyMDY2OSBDMjguMDA5NzA4OSwxMy42ODU0OTU2IDMxLjI2NzQ4MDMsMTAuMTc2OTMwNiAzNS43NDg4MjQ1LDEwLjE3NjkzMDYgQzQwLjIzMDczNDIsMTAuMTc2OTMwNiA0My40MzYxOTgsMTMuNjQ5NzI4NSA0My40NTQwMTA5LDE3Ljk0NTczNDMgTDQzLjQ1NDAxMDksMTcuOTYzNjg4NSBDNDMuNDU0MDEwOSwyMi4yNjAyNTk4IDQwLjE5NjIzOTUsMjUuNzY4ODI0NyAzNS43MTQ4OTUzLDI1Ljc2ODgyNDcgQzMxLjIzMjU2MTUsMjUuNzY4ODI0NyAyOC4wMDk3MDg5LDIyLjMxNDEyMjQgMjguMDA5NzA4OSwxOC4wMTc5NzUzIEwyOC4wMDk3MDg5LDE4LjAxNzk3NTMgWiBNNTMuODMwNDE3MSwyNS43MzMzNDA0IEM1Ny43NDI4ODEyLDI1LjczMzM0MDQgNjAuMjA3ODM5NywyMy40OTU4NDkyIDYwLjIwNzgzOTcsMTguOTMwNjcxNSBMNjAuMjA3ODM5NywxMC40MjcxNTg3IEw1Ny4wMDE4MTAzLDEwLjQyNzE1ODcgTDU3LjAwMTgxMDMsMTkuMDczNzM5OCBDNTcuMDAxODEwMywyMS40NzI2Nzc2IDU1LjgxMjMwODEsMjIuNjkwMDMgNTMuODY0NzcwNCwyMi42OTAwMyBDNTEuOTE3Mzc0MSwyMi42OTAwMyA1MC43Mjc3MzA1LDIxLjQxODk1NjMgNTAuNzI3NzMwNSwxOC45NjY1OCBMNTAuNzI3NzMwNSwxMC40MjcxNTg3IEw0Ny41Mzg2NjU4LDEwLjQyNzE1ODcgTDQ3LjUzODY2NTgsMTkuMDM3ODMxMyBDNDcuNTM4NjY1OCwyMy40Nzc4OTUgNDkuOTE3OTUzLDI1LjczMzM0MDQgNTMuODMwNDE3MSwyNS43MzMzNDA0IEw1My44MzA0MTcxLDI1LjczMzM0MDQgWiBNMy4xNTQ1NywzMy4xOTgxOTQ4IEwxMzUuMDM2NjMyLDMzLjE5ODE5NDggTDEzNS4wMzY2MzIsMy4zMDI0NDQ4OCBMMy4xNTQ1NywzLjMwMjQ0NDg4IEwzLjE1NDU3LDMzLjE5ODE5NDggWiBNMCwzNi40NzM5MjA0IEwxMzguMjA4MTY3LDM2LjQ3MzkyMDQgTDEzOC4yMDgxNjcsMC4wMjY3MTkyNjczIEwwLDAuMDI2NzE5MjY3MyBMMCwzNi40NzM5MjA0IFogTTE0LjgyMzExNDMsMTkuNDg1NDE0NCBMMjAuNzE4NjAwNSwxOS40ODU0MTQ0IEwyMC43MTg2MDA1LDI1LjUzNjU1MDkgTDIzLjkwNzY2NTIsMjUuNTM2NTUwOSBMMjMuOTA3NjY1MiwxMC40NDU2Nzg0IEwyMC43MTg2MDA1LDEwLjQ0NTY3ODQgTDIwLjcxODYwMDUsMTYuNDA2MDU0MiBMMTQuODIzMTE0MywxNi40MDYwNTQyIEwxNC44MjMxMTQzLDEwLjQ0NTY3ODQgTDExLjYzNDc1NjUsMTAuNDQ1Njc4NCBMMTEuNjM0NzU2NSwyNS41MzY1NTA5IEwxNC44MjMxMTQzLDI1LjUzNjU1MDkgTDE0LjgyMzExNDMsMTkuNDg1NDE0NCBaIE0xMTUuODY0OTIyLDE1Ljk0MTUwNjUgTDEyMi44OTc2MDIsMjUuNTM2NTUwOSBMMTI1LjYyMDk4OCwyNS41MzY1NTA5IEwxMjUuNjIwOTg4LDEwLjQ0NTY3ODQgTDEyMi40NjY0MTgsMTAuNDQ1Njc4NCBMMTIyLjQ2NjQxOCwxOS43MzYyMDggTDExNS42NTgzNzcsMTAuNDQ1Njc4NCBMMTEyLjcxMDkxNywxMC40NDU2Nzg0IEwxMTIuNzEwOTE3LDI1LjUzNjU1MDkgTDExNS44NjQ5MjIsMjUuNTM2NTUwOSBMMTE1Ljg2NDkyMiwxNS45NDE1MDY1IEwxMTUuODY0OTIyLDE1Ljk0MTUwNjUgWiIgaWQ9IkZpbGwtMSIgZmlsbD0iIzAwMDEwNSIgbWFzaz0idXJsKCNtYXNrLTIpIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" alt="Houston inc. logo"/></div></div></a></div><div class="col-5 col-5--mobile order-1--mobile order-1--tablet footer__navigation element--flex"><div class="footer__navigation-link-container"><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/about">关于课程</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/#course-contents">课程内容</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/faq">常见问题</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/companies">合作伙伴</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/challenge">挑战</a></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(!(parseInt(navigator.doNotTrack) === 1 || parseInt(window.doNotTrack) === 1 || parseInt(navigator.msDoNotTrack) === 1 || navigator.doNotTrack === "yes")) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135975842-1', 'fullstackopen.com', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/zh/part12/编排基础";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-b048fbb12687222f4356.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f4fbc5442c0ed5fcadc4.js"],"component---src-pages-about-en-js":["/component---src-pages-about-en-js-5b5a8430d6d4e97027d8.js"],"component---src-pages-about-es-js":["/component---src-pages-about-es-js-43ca4f465eb9d91a1e63.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b3413bd47b5faea11ba3.js"],"component---src-pages-about-zh-js":["/component---src-pages-about-zh-js-58afd9244a753e3db031.js"],"component---src-pages-challenge-en-js":["/component---src-pages-challenge-en-js-059fea377f53ad355fdf.js"],"component---src-pages-challenge-es-js":["/component---src-pages-challenge-es-js-294b7943b9cd62c323fc.js"],"component---src-pages-challenge-js":["/component---src-pages-challenge-js-af4cb9cd92af61bf9516.js"],"component---src-pages-challenge-zh-js":["/component---src-pages-challenge-zh-js-0bb7cda0fa7f1437c4e8.js"],"component---src-pages-companies-en-js":["/component---src-pages-companies-en-js-73f6b018b7b6d171e7d4.js"],"component---src-pages-companies-es-js":["/component---src-pages-companies-es-js-e6b87a93d8827d4cc502.js"],"component---src-pages-companies-js":["/component---src-pages-companies-js-8de23a7b3d9614e97ec2.js"],"component---src-pages-companies-zh-js":["/component---src-pages-companies-zh-js-c1210353185f6e66db68.js"],"component---src-pages-faq-en-js":["/component---src-pages-faq-en-js-a4c52e4823fca6d672a9.js"],"component---src-pages-faq-es-js":["/component---src-pages-faq-es-js-40146852f7705e0cfb20.js"],"component---src-pages-faq-js":["/component---src-pages-faq-js-e2148f989a8a05755787.js"],"component---src-pages-faq-zh-js":["/component---src-pages-faq-zh-js-844c6ffcb6d2eac62bd9.js"],"component---src-pages-index-en-js":["/component---src-pages-index-en-js-a347a006f079d54370f6.js"],"component---src-pages-index-es-js":["/component---src-pages-index-es-js-31b82ae957f2b4234d47.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d3b3cf8562b6d041f3d0.js"],"component---src-pages-index-zh-js":["/component---src-pages-index-zh-js-87526ff6b692672eb8d8.js"],"component---src-pages-search-en-js":["/component---src-pages-search-en-js-1e81f46032fb7b0b7fa4.js"],"component---src-pages-search-js":["/component---src-pages-search-js-11cd81d1ec8ed9307c5c.js"],"component---src-pages-search-zh-js":["/component---src-pages-search-zh-js-e486d9ea86fb98602cbb.js"],"component---src-templates-content-template-js":["/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js"],"component---src-templates-part-intro-template-js":["/component---src-templates-part-intro-template-js-b438befea814a7f00f96.js"]};/*]]>*/</script><script src="/webpack-runtime-615dc111c703ff6885cd.js" async=""></script><script src="/framework-8cb3270495e919798e3b.js" async=""></script><script src="/commons-9bbfcb18005d64442a91.js" async=""></script><script src="/30844a71ec80b1e82ad30323d06b914984ff6c2b-bfbd018b7380e158211d.js" async=""></script><script src="/5d7a54886b2742230021cc39eab839038eb7a677-7e0df6a64154312ad871.js" async=""></script><script src="/styles-89fd2ae28bdf06750a71.js" async=""></script><script src="/ff8e348e8d42e8d61f84312613c75c948ce81396-73e1478ec1d8afda6a11.js" async=""></script><script src="/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js" async=""></script><script src="/app-b048fbb12687222f4356.js" async=""></script><script src="/e4b9374bcd292c90587e3ccf579324c3065ac22f-91cf5431cb3e1fc76518.js" async=""></script></body></html>

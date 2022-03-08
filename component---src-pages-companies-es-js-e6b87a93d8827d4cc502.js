@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{"+JAa":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),c=t("xEVu");n.default=function(){return o.a.createElement(c.a,{lang:"es",title:"Partner companies | Full Stack open 2022",seoDescription:"Full stack development in partner companies"})}}}]);
+//# sourceMappingURL=component---src-pages-companies-es-js-e6b87a93d8827d4cc502.js.map

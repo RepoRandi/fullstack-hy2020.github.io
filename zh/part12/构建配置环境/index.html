@@ -1,0 +1,660 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e909ca77e15e07f0bc8a.css">@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600);@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400);code[class*=language-],pre[class*=language-]{color:#fff;background:none;text-shadow:0 -.1em .2em #000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}:not(pre)>code[class*=language-],pre[class*=language-]{background:#4d4033}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border:.3em solid #7a6652;border-radius:.5em;box-shadow:inset 1px 1px .5em #000}:not(pre)>code[class*=language-]{padding:.15em .2em .05em;border-radius:.3em;border:.13em solid #7a6652;box-shadow:inset 1px 1px .3em -.1em #000;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998066}.token.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#d1949e}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#bde052}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f5b83d}.token.atrule,.token.attr-value,.token.keyword{color:#d1949e}.token.important,.token.regex{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}.course{position:relative;width:100%}@media (min-width:992px){.course{display:flex;flex-wrap:nowrap;flex-direction:row;align-items:flex-start}}.course p{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course p{margin-left:1rem}}.course p:not(:last-of-type){margin-bottom:1rem}@media (min-width:640px){.course h1{margin-left:3rem}}.course h2,.course h3,.course h4{padding-bottom:2rem}@media (min-width:640px){.course h2,.course h3,.course h4,.course table{margin-left:1rem}}.course ul{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course ul{margin-left:2.2rem}}.course h2:not(:first-of-type){margin-top:2rem}.course pre{margin:2rem 0;background-color:#33332d;color:#fff}.course em{font-family:Courier;font-style:normal;background-color:hsla(0,0%,88.2%,.6);padding:1px 5px 2px}.course img{border:11px solid transparent}.course .banner,.course .container{position:static}.course .letter{width:4rem;height:4rem;border-width:5px;border-style:solid;border-radius:2.5rem;text-align:center;margin:1rem;line-height:1.3em;transform:translate(-1rem)}@media (min-width:640px){.course .letter{transform:translate(-3rem,4.5rem)}}.course .letter,.course h1{font-size:2.3rem;font-weight:700}.course-content-container{width:100%}.course-content a,.tasks a{border:0;border-bottom-width:2px;border-style:solid;padding:2px}.course-content{width:90%;margin:0 auto;max-width:1200px}@media (min-width:992px){.course-content-inner{padding-left:30%;padding-right:5%}}.tasks a{border-color:#33332d!important}.tasks a:hover{background-color:#fff!important;color:#000!important}.gatsby-highlight-code-line{background-color:hsla(0,0%,88.2%,.3);display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:1em}code[class*=language-],pre[class*=language-]{text-shadow:none}.arrow-go-up{width:36px;height:36px;position:fixed;bottom:5%;right:5%;z-index:99999;cursor:pointer}@media (max-width:639px){.arrow-go-up{right:10%}}.part-main__banner{background-position:50%;background-size:50%;padding-bottom:10%;background-repeat:no-repeat}@media (max-width:639px){.part-main__banner{background-position:top;background-size:70%;padding-bottom:30%!important}}.part-intro{font-family:IBM Plex Sans,monospace!important}.part-intro p:not(:last-of-type){padding-bottom:2em}.part-intro__banner{background-size:50%;background-repeat:no-repeat;background-position:100%}@media (max-width:639px){.part-intro__banner{background-position:top;background-size:70%}.part-intro__banner>.container{margin-top:40%}}.part-intro a{border-bottom:1px solid #33332d}.part-intro a:hover{background-color:#fff}.arrow__container{position:relative}.arrow__container:not():first-child{background:none;background-color:none}@media (min-width:640px){.arrow__container:not():first-child{border-left:none}.arrow__container:not():first-child:before{content:"";background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhLS1HZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCktLT48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NzcuMTc1IDQ3Ny4xNzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTM2MC43MzEsMjI5LjA3NWwtMjI1LjEtMjI1LjFjLTUuMy01LjMtMTMuOC01LjMtMTkuMSwwcy01LjMsMTMuOCwwLDE5LjFsMjE1LjUsMjE1LjVsLTIxNS41LDIxNS41CgkJYy01LjMsNS4zLTUuMywxMy44LDAsMTkuMWMyLjYsMi42LDYuMSw0LDkuNSw0YzMuNCwwLDYuOS0xLjMsOS41LTRsMjI1LjEtMjI1LjFDMzY1LjkzMSwyNDIuODc1LDM2NS45MzEsMjM0LjI3NSwzNjAuNzMxLDIyOS4wNzV6CgkJIi8+PC9nPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjwvc3ZnPg==) no-repeat;background-size:contain;position:absolute;top:0;left:0;height:100%;width:100%}}.arrows--horizontal{display:flex;position:relative;margin:0;align-items:flex-start}.arrow__wrapper{display:flex;justify-content:flex-start;align-items:center;margin:0}.arrow__wrapper:first-of-type{border-right:none;z-index:20}.arrow__wrapper:nth-of-type(n+2){margin-left:-4rem;z-index:10}.arrow__wrapper:nth-of-type(n+2) .arrow__rectangle{border-left:none;padding-left:4rem}.arrow__wrapper:nth-of-type(3){z-index:5}.arrow__wrapper:hover .arrow__point,.arrow__wrapper:hover .arrow__rectangle,.arrow__wrapper:hover .arrow__rectangle>a{background-color:#33332d!important;color:#fff!important}.arrow__rectangle{padding:1rem;justify-content:center;align-items:center;border:2px solid #33332d;border-right:none;z-index:2;overflow:hidden;font-family:IBM Plex Sans,monospace;position:relative}@media (max-width:991px){.arrow__rectangle{font-size:1rem}}.arrow__rectangle .bold{font-weight:600}.arrow__rectangle--thick-border{border:3px solid #33332d;border-right:none}.arrow__point{padding:1.25rem;border:2px solid #33332d;border-bottom:none;border-left:none;transform:translate(-1.3rem) rotate(45deg);z-index:1;overflow:hidden}.arrow__point--thick-border{border:3px solid #33332d;border-bottom:none;border-left:none}.arrow__wrapper--stacked{display:flex;justify-content:flex-start;align-items:center;margin:auto auto auto 0}@media (max-width:639px){.arrow__wrapper--stacked .arrow__rectangle{border:none;background-color:transparent!important;padding:0;font-size:1rem;justify-content:unset}.arrow__wrapper--stacked .arrow__rectangle>p>span{border-bottom:1px solid #33332d;margin:auto}.arrow__wrapper--stacked .arrow__rectangle>p>span:hover{background-color:#fff!important;color:#000}.arrow__wrapper--stacked .arrow__point{display:none}}.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:1rem}@media (min-width:640px){.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:-2px}}.arrow__wrapper--stacked .arrow__rectangle{position:relative}@media (min-width:640px){.arrow__wrapper--stacked .arrow__rectangle{padding:1.25rem}}@media (min-width:992px){.arrow__wrapper--stacked .arrow__rectangle{padding:1rem}}.arrow__wrapper--stacked .arrow__point{padding:1.08rem;margin-left:2px}@media (min-width:640px){.arrow__wrapper--stacked .arrow__point{margin-left:unset;padding:1.25rem}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow__point,.arrow__wrapper--stacked:hover .arrow__rectangle{background-color:#33332d!important}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow--stacked-letter,.arrow__wrapper--stacked:hover .arrow--stacked-title{color:#fff}}.arrow--stacked-title{font-family:IBM Plex Mono,monospace}@media (min-width:640px){.arrow--stacked-title{white-space:nowrap}}.arrow__container--with-link{width:100%!important}@media (max-width:639px){.breadcrumb .arrow__wrapper{display:none}}.breadcrumb .arrow__wrapper:hover .arrow__point,.breadcrumb .arrow__wrapper:hover .arrow__rectangle{background-color:#33332d!important}.breadcrumb .arrow__wrapper:hover .arrow--stacked-letter,.breadcrumb .arrow__wrapper:hover .arrow--stacked-title{color:#fff}.breadcrumb .arrow__rectangle{position:relative}@media (max-width:639px){.breadcrumb .arrow__rectangle{border:none;padding:0;font-size:.7rem;white-space:nowrap;background-color:transparent!important;color:#33332d}}@media (max-width:639px){.breadcrumb .arrow__point{display:none}}.banner{display:flex;width:100%;align-items:center;position:relative;padding:2rem 0;background-color:#e1e1e1}@media (min-width:992px){.banner{padding:3.444rem 3.444rem 4.444rem}}html{font-family:IBM Plex Mono,monospace;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:IBM Plex Mono,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em IBM Plex Mono,monospace;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:IBM Plex Mono,monospace;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{margin:2rem 0 -.5rem;font-size:1.38316rem}h3,h4{padding:0;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{margin:2rem 0 -1rem;font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.element--flex{display:flex;flex-wrap:wrap}.element--space-around{justify-content:space-around}.element--space-between{justify-content:space-between}.element--column{flex-direction:column}.element--centered{align-items:center;justify-content:center!important}@media (min-width:992px){.element--centered-in-desktop{align-items:center;justify-content:center!important}}@media (min-width:992px){.element--horizontal-half{width:45%}}.element--auto-margin{margin:auto}.element--auto-bottom-margin{margin-bottom:auto}.element--flex-start{align-content:flex-start}.element--no-wrap{flex-wrap:nowrap}.element--relative{position:relative!important}.edit-link>span{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:inherit}.accordion__container{margin-bottom:1rem}.accordion__title{padding-left:2.149rem!important;padding-right:2.149rem!important;font-size:1.111rem!important;font-weight:600}.accordion{background-color:#fff;border:3px solid #33332d;border-radius:5px;color:#444;cursor:pointer;padding:1rem;width:100%;text-align:left;outline:none;font-size:15px;transition:max-width .4s}.accordion:hover,.active{background-color:#e1e1e1}.accordion:after{content:"+";font-size:1.5rem;float:right;margin-left:5px}.active{border-color:#fff}.active:after{content:"-";font-size:1.5rem}.panel{background-color:#fff;transition:height .3s;transition-timing-function:ease-in-out;overflow:hidden}.accordion--side-navigation{width:100%;margin-left:unset}.accordion--side-navigation .accordion{border:none;padding:0!important;background-color:transparent!important;color:#33332d!important;border-radius:0}.accordion--side-navigation .accordion__title{font-size:16px!important;font-weight:unset;background-color:transparent}.accordion--side-navigation .accordion__title:hover{background-color:#33332d!important;color:#fff!important}.accordion--side-navigation .panel{padding:1rem 0 0!important;background-color:transparent}.accordion--side-navigation .panel ul{margin-left:1rem}.accordion--side-navigation .accordion:hover,.accordion--side-navigation .active{background-color:#33332d;color:#fff}.accordion--side-navigation .accordion:after,.accordion--side-navigation .active:after{content:""}.body-text:not(:last-of-type){margin-bottom:2.5rem}.body-text__title{color:#33332d;font-size:1.44rem;line-height:1.25em;font-weight:700;margin:0;position:relative;top:50%;transform:translateY(-50%)}.body-text__content:not(:last-of-type){padding-bottom:2em}.bold{font-weight:700}.body-text--no-padding{padding:0!important}@media (min-width:640px){.companies__main-title .body-text__title{font-size:3rem}}.challenge-title{font-size:1.44rem}@media (min-width:992px){.company__logo{width:15%!important}}.content-liftup{position:relative;text-decoration:none}.content-liftup--small{box-sizing:border-box}.content-liftup--small>:last-child{margin-bottom:0}.content-liftup__name{margin-top:1.5rem;color:#33332d;font-weight:700}@media (min-width:992px){.content-liftup__name{margin-top:2rem}}.content-liftup__summary{margin-top:1rem;margin-bottom:3rem;color:#33332d;line-height:28px}.content-liftup__link{text-decoration:none;font-weight:700}.content-liftup .content-liftup__image:after,.content-liftup__link:after{content:"";position:absolute;top:0;left:0;height:100%;width:100%}.content-liftup .content-liftup__image:after{opacity:.5;z-index:2}body,html{margin:0;padding:0;font-family:IBM Plex Mono,monospace;font-weight:500;color:#33332d;font-size:14px;line-height:1.555rem}@media (min-width:992px){body,html{font-size:18px}}.main-wrapper{min-height:100vh;display:flex;flex-direction:column}p{margin:0;text-align:left;line-height:1.5em}a,p{color:#33332d}a{text-decoration:none}.link a{border-bottom:2px solid #e1e1e1}.link a:hover{background-color:#e1e1e1}.container{position:relative;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;width:90%;max-width:1300px}@media (max-width:639px){.container{padding:0 20px}}@media (min-width:992px){.container--right{margin-right:5%;width:54%;max-width:779.9844px}}@media (min-width:992px) and (min-width:1300px){.container--right{margin-right:calc((100% - 1300px)/2)}}.hidden{display:none!important}.centered{text-align:center}@media (max-width:639px){.centered--mobile{justify-content:center;align-content:center;align-items:center}}.spacing{margin-top:2rem}@media (max-width:992px) and (min-width:640px){.spacing--tablet{margin-top:5rem!important}}@media (min-width:992px){.spacing{margin-top:5rem}}.spacing--small{margin-top:1rem}@media (min-width:992px){.spacing--small{margin-top:3.444rem}}.spacing--large{margin-top:4rem}@media (min-width:992px){.spacing--large{margin-top:10rem}}.spacing--extra-large{margin-top:4rem}@media (min-width:992px){.spacing--extra-large{margin-top:20rem}}.spacing--after{margin-bottom:2rem}@media (min-width:992px){.spacing--after{margin-bottom:5rem}}@media (max-width:639px){.spacing--after--mobile{margin-bottom:5rem}}@media (min-width:992px){.spacing--after-small{margin-bottom:2.5rem}}.spacing--after-large{margin-bottom:4rem}@media (min-width:992px){.spacing--after-large{margin-bottom:10rem}}@media (max-width:991px){.spacing--mobile{margin-top:2rem}}@media (max-width:1299px){.spacing--mobile--small{margin-top:1.5rem}}@media (max-width:1299px){.spacing--mobile--large{margin-top:3rem}}.col-1{width:100%}@media (min-width:992px){.col-1{width:10%}}.col-2{width:100%}@media (min-width:992px){.col-2{width:20%}}.col-3{width:100%}@media (min-width:992px){.col-3{width:30%}}.col-4{width:100%}@media (min-width:992px){.col-4{width:40%}}.col-5{width:100%}@media (min-width:992px){.col-5{width:50%}}.col-6{width:100%}@media (min-width:992px){.col-6{width:60%}}.col-7{width:100%}@media (min-width:992px){.col-7{width:70%}}.col-8{width:100%}@media (min-width:992px){.col-8{width:80%}}.col-9{width:100%}@media (min-width:992px){.col-9{width:90%}}.col-10{width:100%}@media (min-width:992px){.col-10{width:100%}}@media (min-width:992px){.push-right-1{margin-left:10%}.push-right-2{margin-left:20%}.push-right-3{margin-left:30%}.push-right-4{margin-left:40%}.push-right-5{margin-left:50%}.push-left-1{margin-right:10%}.push-left-2{margin-right:20%}.push-left-3{margin-right:30%}.push-left-4{margin-right:40%}.push-left-5{margin-right:50%}.push-left{margin-right:auto}.push-right{margin-left:auto}}@media (max-width:639px){.col-1--mobile{width:10%!important}.col-2--mobile{width:20%!important}.col-3--mobile{width:30%!important}.col-4--mobile{width:40%!important}.col-5--mobile{width:50%!important}.col-6--mobile{width:60%!important}.col-7--mobile{width:70%!important}.col-8--mobile{width:80%!important}.col-9--mobile{width:90%!important}.col-10--mobile{width:100%!important}.push-right-1--mobile{margin-left:10%!important}.push-right-2--mobile{margin-left:20%!important}.push-right-3--mobile{margin-left:30%!important}.push-right-4--mobile{margin-left:40%!important}.push-right-5--mobile{margin-left:50%!important}.push-left-1--mobile{margin-right:10%!important}.push-left-2--mobile{margin-right:20%!important}.push-left-3--mobile{margin-right:30%!important}.push-left-4--mobile{margin-right:40%!important}.push-left-5--mobile{margin-right:50%!important}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}@media (max-width:1299px){.col-1--tablet{width:10%}.col-2--tablet{width:20%}.col-3--tablet{width:30%}.col-4--tablet{width:40%}.col-5--tablet{width:50%}.col-6--tablet{width:60%}.col-7--tablet{width:70%}.col-8--tablet{width:80%}.col-9--tablet{width:90%}.col-10--tablet{width:100%}.order-0--tablet{order:0}.order-1--tablet{order:1}.order-2--tablet{order:2}.order-3--tablet{order:3}.order-4--tablet{order:4}.order-5--tablet{order:5}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}.centered-vertically{display:flex;flex-direction:column;justify-content:center}.nav-item-hover{text-decoration:none;color:#33332d;font-weight:500;padding:.2em}@media (min-width:640px){.nav-item-hover{font-weight:600}}.nav-item-hover:active,.nav-item-hover:focus,.nav-item-hover:hover{color:#fff;background-color:#33332d!important}.nav-item-hover:active,.nav-item-hover:focus{outline:2px solid #706be4}.flex-fix-aligning:after,.flex-fix-aligning:before{content:"";width:30%;order:2}.index__main-title{font-size:1.571rem}@media (min-width:992px){.index__main-title{font-size:3rem}}.auto-bottom-margin{margin-bottom:auto}@media (min-width:992px){.absolute-top-right--desktop{position:absolute;top:0;right:0}}@media (min-width:640px){.frontpage__hero .image{top:-2em}}@media (min-width:992px){.frontpage__hero{flex-direction:column}.frontpage__hero .image{top:4em}}.heading-font{font-family:IBM Plex Sans,monospace}.about__challenge-button{box-shadow:-3px 5px #33332d;padding:.6rem 1rem;border:3px solid #33332d;font-weight:600}.about__challenge-button:hover{background-color:#33332d;color:#fff;cursor:pointer}.about__challenge-button--turquoise{background-color:#82f7eb}@media (max-width:1299px){.space-between--mobile{justify-content:space-between}}.challenge__banner{display:flex;justify-content:center;margin-bottom:-70px}@media (min-width:640px){.challenge__banner{transform:translateY(-10px)}}@media (min-width:1300px){.challenge__banner{margin-bottom:-370px}}.challenge__banner .image{margin:0;width:70%;transform:translateY(-25%)}@media (min-width:640px){.challenge__banner .image{transform:translateY(-10%)}}@media (min-width:1300px){.challenge__banner .image{transform:translateY(-30%)}}.header{position:-webkit-sticky;position:sticky;z-index:9999999999;top:0;box-sizing:border-box;width:100%;padding-top:1.444rem;padding-bottom:1rem;transition:all .2s ease-in-out}.header--small{pointer-events:none}.header__logo{margin:0 10px;pointer-events:auto}.navigation{z-index:2;list-style:none;opacity:0;display:none;margin:0;padding:5%;flex-direction:column;justify-content:center;align-items:center;background:#e1e1e1;position:fixed;top:8%;right:5%;transition:opacity .3s ease-in-out;font-weight:200}@media (min-width:1300px){.navigation{display:flex;opacity:1;padding:0;font-weight:400;position:static;background:none;overflow:hidden;flex-direction:row}}@media (max-width:1299px){.navigation__wrapper .language-switcher{margin:20px 0 0}}@media (min-width:1300px){.navigation__wrapper{flex-grow:100}}.navigation__language-picker{margin-left:auto}.navigation__toggle{z-index:3;position:absolute;top:0;right:0;width:50px;height:40px;cursor:pointer;border:none;background:none;outline:none;border-radius:4px}@media (min-width:1300px){.navigation__toggle{display:none}}.navigation__mobile-logo{display:none}.navigation__toggle-icon{top:8px;left:10px}.navigation__toggle-icon,.navigation__toggle-icon:after,.navigation__toggle-icon:before{position:absolute;width:30px;height:3px;transition:all .3s ease;border-radius:4px;background-color:#33332d}.navigation__toggle-icon:after,.navigation__toggle-icon:before{content:"";display:block}.navigation__toggle-icon:before{top:10px}.navigation__toggle-icon:after{top:20px}.is-open--navigation{overflow:hidden;height:100vh}.is-open--navigation .navigation{opacity:1;display:unset}.is-open--navigation .navigation:before{content:"";background-color:#e1e1e1;position:absolute;width:25px;height:25px;top:-3px;right:13px;transform:rotate(45deg)}.is-open--navigation .navigation__mobile-logo{display:block;width:30px;height:30px;position:absolute;top:47px;left:5%}@media (min-width:1300px){.is-open--navigation .navigation__mobile-logo{display:none}}.is-open--navigation .navigation__toggle-icon{transform:translate3d(0,10px,0) rotate(45deg)}.is-open--navigation .navigation__toggle-icon,.is-open--navigation .navigation__toggle-icon:after,.is-open--navigation .navigation__toggle-icon:before{background:#33332d}.is-open--navigation .navigation__toggle-icon:before{transform:rotate(-45deg) translate3d(-5.71429px,-6px,0);opacity:0}.is-open--navigation .navigation__toggle-icon:after{transform:translate3d(0,-19px,0) rotate(-90deg)}.navigation__item{margin:22px 0;white-space:nowrap}.navigation__item:first-of-type{margin:0 0 22px}.navigation__item:last-of-type{margin:22px 0 0}@media (min-width:1300px){.navigation__item{margin:0 30px;padding:0!important}.navigation__item:first-of-type{margin:0 30px 0 2rem}.navigation__item:last-of-type{margin:0 0 0 30px}}.LanguagePicker-module--select--364N3{padding:3px 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #33332d;border-radius:5px;color:inherit;background-color:#fff;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23333333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;background-size:16px 12px;width:6.5rem}.SvgIcon-module--svgIcon--1nGJ6{-webkit-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;flex-shrink:0;font-size:1.5rem}.SrOnly-module--srOnly--2Hn2L{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.SearchLink-module--searchLink--2IShR{margin-left:auto;border-radius:4px;padding:4px;display:inline-flex}.SearchLink-module--searchLink--2IShR:hover{background-color:#33332d;color:#fff}.triple-border{position:relative;padding:2px;border-radius:5px 0;transition:color .1s ease-in-out,background-color .1s ease-in-out}.triple-border:after,.triple-border:before{z-index:2;content:"";border:2px solid #33332d;border-radius:5px;position:absolute;width:calc(100% + 5px);height:calc(100% + 5px)}.triple-border:before{left:0;top:0}.triple-border:after{bottom:0;right:0}.triple-border__container{position:relative;overflow:hidden;border-radius:3px 0}.triple-border--large-margin{margin:13px;padding:3px}.triple-border--large-margin:after,.triple-border--large-margin:before{content:"";border-width:3px;border-radius:13px;width:calc(100% + 13px);height:calc(100% + 13px)}.triple-border--large-margin .triple-border__container{border-radius:10px 0}.triple-border__logo{padding:.2rem;font-size:1.111rem;font-weight:600}.triple-border__return-tasks{font-size:.9rem;padding:1rem .2rem}.image__content{position:absolute;top:0;left:0;height:100%;width:100%;-o-object-fit:cover;object-fit:cover}.image--contain .image__content{-o-object-fit:contain;object-fit:contain}.image{overflow:hidden;width:100%;position:relative}@media (min-width:992px){.image{width:40%}}.image .image__container{height:0;position:relative;width:100%;padding-bottom:89.0625%}.image--circle{border-radius:50%}.image--circle .image__content{background-color:#e1e1e1}.image--square-big{width:100%}.image--square-big .image__container{width:100%;padding-bottom:100%}.image--extra-small{width:8%}.image--extra-small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--extra-small{width:calc(33.33333% - 1rem)}}.image--small{width:15%}.image--small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--small{width:calc(33.33333% - 1rem)}}.image--medium{width:50%}.image--medium .image__container{width:100%;padding-bottom:71.25%}.image--large{width:100%}@media (min-width:992px){.image--large{width:60%}}.image--large .image__container{padding-bottom:59.37%;width:100%}.image--full-width{width:100%}.image--full-width .image__container{padding-bottom:59.37%;width:100%}.image--actual-size{width:100%}.image--actual-size .image__container{height:0;position:relative;width:100%;padding-bottom:60%}.form p{font-family:IBM Plex Sans,monospace;font-size:.9rem;margin-bottom:10px}.form input{padding:1rem;border:1px solid #e1e1e1;outline:0}.form input:focus{border:1px solid #33332d}.form .submit{border:3px solid #33332d;background-color:#e1e1e1;padding:.7rem 2rem}.form .submit:hover{cursor:pointer;background-color:#33332d;color:#fff}.developer-story__image{margin-bottom:auto}.developer-story__name{margin-top:4rem;font-size:1.2rem}.developer-story__title{font-size:.9rem}.developer-story__read-more{margin-top:2rem;line-height:1.1rem;width:auto;background:none;color:inherit;padding:0!important;border:none;border-bottom:2px solid #e1e1e1;cursor:pointer}.developer-story__read-more:hover{background-color:#e1e1e1}.some-logo__link{margin:1rem 1rem 0 0;display:inline-block}.some-logo__image{width:1.5rem;height:1.5rem;margin:0}#footer{margin-top:auto}@media (min-width:992px){#footer{align-items:center}}#footer a:hover{background-color:transparent!important}#footer .footer__navigation{display:none}@media (max-width:1299px){#footer .footer__navigation{width:100%;display:block}#footer .footer__navigation-link-container{display:flex;flex-direction:column}}#footer .footer__navigation-link{font-size:1rem;line-height:18px;white-space:nowrap;font-family:IBM Plex Sans,monospace;margin-left:0!important;margin-right:auto}@media (max-width:639px){#footer .footer__navigation-link{line-height:8px}}#footer .footer__navigation-link:hover{color:#fff!important;background-color:#33332d!important}#footer .footer__navigation-link:nth-of-type(n+2){margin-top:2.142rem}@media (min-width:1300px){#footer .footer__navigation{flex-direction:row;flex-wrap:nowrap;justify-content:flex-end}#footer .footer__navigation-link{margin-top:0!important;margin-bottom:auto}#footer .footer__navigation-link:nth-of-type(n+1){margin-right:2.877rem}#footer .footer__navigation-link:last-of-type{margin-right:0!important}}.prev-next__container .separator{display:none}@media (max-width:639px){.prev-next__container .separator{display:block;background-color:#33332d;width:2px!important}}.prev-next__container .prev b,.prev-next__container .prev p{text-align:right}@media (max-width:639px){.prev-next__container .prev p:before{content:"<";margin-right:1rem}}@media (max-width:639px){.prev-next__container .next p:after{content:">";margin-left:1rem}}.scroll-navigation-container{display:none}@media (min-width:992px){.scroll-navigation-container{pointer-events:none;display:block;font-size:16px;position:-webkit-sticky;position:sticky;width:100%;margin-right:-100%;left:0;top:-100px;padding-top:200px}}.scroll-navigation-container-inner{width:90%;margin:0 auto;max-width:1200px}.scroll-navigation{pointer-events:auto;display:flex;width:30%;max-width:30%/.9;height:100%;overflow-y:auto;max-height:calc(100vh - 100px);padding-right:1rem;z-index:199}.scroll-navigation li{list-style-type:none}.scroll-navigation li.selected a,.scroll-navigation li:hover a{background-color:#33332d;color:#fff!important}.scroll-navigation li:before{content:"-"}.left-navigation-link{padding-left:1.2rem;text-indent:-1.2rem;display:block}.left-navigation-link:hover{background-color:#33332d!important;color:#fff!important}.level-h1{font-weight:700;padding-left:2.8rem;text-indent:-2.8rem}.level-h2{padding-left:1.6rem;text-indent:-1.6rem}.sub-header{color:#33332d;font-family:IBM Plex Mono,monospace;padding-bottom:1.357rem}@media (min-width:992px){.sub-header{padding-bottom:2.333rem}}.InputField-module--inputField--3oXh5{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;border:0;font-family:inherit;padding:16px 12px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.3);color:#000;transition:all .15s ease}.InputField-module--inputField--3oXh5:hover{box-shadow:inset 0 -2px 0 rgba(0,0,0,.4)}.InputField-module--inputField--3oXh5:focus{outline:none;box-shadow:inset 0 -2px 0 rgba(0,0,0,.5)}</style><meta name="generator" content="Gatsby 2.23.22"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><title data-react-helmet="true">Fullstack part12 | </title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:title" content="Fullstack part12 | "/><meta data-react-helmet="true" property="og:description" content=""/><meta data-react-helmet="true" name="og:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Houston Inc. Consulting oy"/><meta data-react-helmet="true" name="twitter:title" content="Fullstack part12 | "/><meta data-react-helmet="true" name="twitter:description" content=""/><meta data-react-helmet="true" name="twitter:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="ds9pQKiK3kjhRSHHbf5ccoG-oJggn7Lq4A8uHxM3Mkw"/><meta data-react-helmet="true" name="keywords" content="fullstack, Full stack -websovelluskehitys, course, helsingin yliopisto, tietojenkäsittelytieteen osasto, mooc, mooc.fi, full stack, full stack open, web-sovelluskehitys, web, houston, houston inc, websovelluskehitys, web-sovellus, React, Redux, Node.js, Node, MongoDB, GraphQL, REST, REST api, single page -sovellus, ohjelmointi, university of helsinki, department of computer science, web development, software development, web, web application, single page app, programming, "/><link rel="icon" href="/favicon-32x32.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#e1e1e1"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=6460c405ec32c913ef778f48c5ab192e"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="canonical" href="https://fullstackopen.com/zh/part12/构建配置环境" data-baseprotocol="https:" data-basehost="fullstackopen.com"/><link as="script" rel="preload" href="/e4b9374bcd292c90587e3ccf579324c3065ac22f-91cf5431cb3e1fc76518.js"/><link as="script" rel="preload" href="/app-b048fbb12687222f4356.js"/><link as="script" rel="preload" href="/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js"/><link as="script" rel="preload" href="/ff8e348e8d42e8d61f84312613c75c948ce81396-73e1478ec1d8afda6a11.js"/><link as="script" rel="preload" href="/styles-89fd2ae28bdf06750a71.js"/><link as="script" rel="preload" href="/5d7a54886b2742230021cc39eab839038eb7a677-7e0df6a64154312ad871.js"/><link as="script" rel="preload" href="/30844a71ec80b1e82ad30323d06b914984ff6c2b-bfbd018b7380e158211d.js"/><link as="script" rel="preload" href="/commons-9bbfcb18005d64442a91.js"/><link as="script" rel="preload" href="/framework-8cb3270495e919798e3b.js"/><link as="script" rel="preload" href="/webpack-runtime-615dc111c703ff6885cd.js"/><link as="fetch" rel="preload" href="/page-data/zh/part12/构建配置环境/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="main-wrapper"><div class="header " style="background-color:white"><div class="container" style="align-items:center;justify-content:flex-start"><a class="header__logo" href="/"><div class="triple-border nav-item-hover " style="padding:0.2em"><div class="triple-border__container triple-border__logo" style="background-color:transparent;z-index:10">{() =&gt; fs}</div></div></a><div class="navigation__wrapper "><button aria-label="Navigation menu" aria-expanded="false" class="navigation__toggle"><div class="navigation__toggle-icon"></div></button><nav><ul class="navigation"><li class="navigation__item "><a class="nav-item-hover" href="/zh/about">关于课程</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/#course-contents">课程内容</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/faq">常见问题</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/companies">合作伙伴</a></li><li class="navigation__item "><a class="nav-item-hover" href="/zh/challenge">挑战</a></li><a class="SearchLink-module--searchLink--2IShR" href="/zh/search"><span class="SrOnly-module--srOnly--2Hn2L">从教程中搜索</span><svg role="img" viewBox="0 0 24 24" class="SvgIcon-module--svgIcon--1nGJ6"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></a><select class="navigation__language-picker LanguagePicker-module--select--364N3"><option value="fi">Suomi</option><option value="en">English</option><option selected="" value="zh">中文</option><option value="es">Spanish</option></select></ul></nav></div></div></div><div class="course-container spacing--after"><div class="banner part-main__banner spacing--mobile--small" style="background-image:url(/static/09ec6709015c0dcb492111bd9e645d3d/part-12.svg);background-color:#F9B9D3"><div class="container spacing--after"><div class="col-10 spacing--after"><div class="arrow__container arrows--horizontal breadcrumb"><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#F9B9D3;color:#33332d"><a href="/zh/#course-contents">Fullstack</a></div><div class="arrow__point " style="background-color:#F9B9D3;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#F9B9D3;color:#33332d"><a href="/zh/part12">Part 12</a></div><div class="arrow__point " style="background-color:#F9B9D3;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#33332d;color:white">构建配置环境</div><div class="arrow__point " style="background-color:#33332d;color:white"></div></div></div></div></div></div><div class="course "><div class="scroll-navigation-container "><div class="scroll-navigation-container-inner "><div class="scroll-navigation  element--column" tag="ul"><a class="left-navigation-link" style="border-color:#F9B9D3" href="/zh/part12/容器介绍">a 容器介绍</a><div class="accordion__container col-8 push-right-1 accordion--side-navigation"><button class="accordion accordion__title  " style="background-color:#F9B9D3;border-color:#F9B9D3">b 构建配置环境</button><div class="panel" style="padding:;max-height:0;transition:max-height 0.2s ease-out"><ul></ul></div></div><a class="left-navigation-link" style="border-color:#F9B9D3" href="/zh/part12/编排基础">c 编排基础</a></div></div></div><div class="course-content-container "><div class="course-content element--auto-bottom-margin"><div class="course-content-inner "><p class="col-1 letter" style="border-color:#F9B9D3">b</p><h1 class="sub-header ">构建配置环境</h1></div></div><div class="course-content "><div class="course-content-inner ">
+<!-- -->
+<p>在上一节中，我们使用了两个不同的基础镜像：ubuntu 和 node，并做了一些手动操作来获得一个简单的“Hello, World！”运行。我们在这个过程中学到的工具和命令很有用。在本节中，我们将学习如何为我们自己的应用程序构建容器和配置环境。我们会从一个常规的 Express/Node.js 后端程序开始，在其之上构建其他服务，包括MongoDB 数据库。</p>
+<h3>Dockerfile</h3>
+<!-- -->
+<p>我们可以创建一个包含“Hello, World!”应用的新镜像，而不是通过复制其中的文件来修改容器。工具是 Dockerfile。 Dockerfile 是一个简单的文本文件，其中包含创建镜像的所有说明。让我们从“Hello, World!”应用程序创建一个示例 Dockerfile。</p>
+<!-- -->
+<p>如果您还没有，请在您自己的机器上创建一个目录并在其中创建一个名为 <i>Dockerfile</i> 的文件。我们还在 Dockerfile 旁边放置一个包含 <em>console.log(&#x27;Hello, World!&#x27;)</em> 的 <i>index.js</i>。您的目录结构应如下所示：</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">├── index.js
+└── Dockerfile</code></pre></div>
+<!-- -->
+<p>在该 Dockerfile 中，我们将告诉镜像 3 件事：</p>
+<ul>
+<li>使用 node:16 作为我们镜像的基础，我们希望node 16 包含的所有内容都可用于该镜像。</li>
+<li>将 index.js 包含在镜像中，这样我们就不需要手动复制到容器中了</li>
+<li>当我们从镜像运行容器时，使用 node 执行 index.js 文件。</li>
+</ul>
+<!-- -->
+<p>以上的愿望会被翻译成基本的Dockerfile。Dockerfile 最好的位置通常是在项目的根目录。</p>
+<!-- -->
+<p><i>Dockerfile</i> 的编辑结果如下：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> ./index.js ./index.js
+
+<span class="token keyword">CMD</span> node index.js</code></pre></div>
+<!-- -->
+<p>FROM 指令会告诉我们的基础镜像是 node:16。 COPY 指令将<i>index.js</i>文件从宿主机复制到镜像中，并使用相同的文件名。 CMD 指令说明 <em>docker run</em> 时将执行什么。 CMD 是默认命令，可以用镜像名称后给出的参数覆盖。如果您忘记了，请参阅 <em>docker run --help</em>。</p>
+<!-- -->
+<p>WORKDIR 指令确保我们不会干扰镜像已有的内容。它将确保以下所有命令都位于目录 <i>/usr/src/app</i> 中执行，如果该目录不存在于基础镜像中，会自动创建。</p>
+<!-- -->
+<p>如果我们不指定 WORKDIR，我们就有可能意外覆盖无关但重要的文件。如果您使用 <em>docker run node:16 ls</em> image 检查 node:16 的根 (<em>/</em>)，您可以注意到镜像中已包含的所有目录和文件。这是因为我们使用node作为基础镜像。node镜像已经包含所有这些文件，我们只是添加了我们自己的文件。</p>
+<!-- -->
+<p>现在我们可以使用命令 <em>docker build</em> 来构建基于 Dockerfile 的镜像。让我们用一个额外的标志为命令：<em>-t</em>，这将帮助我们命名镜像：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker build -t fs-hello-world <span class="token builtin class-name">.</span> 
+<span class="token punctuation">[</span>+<span class="token punctuation">]</span> Building <span class="token number">3</span>.9s <span class="token punctuation">(</span><span class="token number">8</span>/8<span class="token punctuation">)</span> FINISHED
+<span class="token punctuation">..</span>.</code></pre></div>
+<!-- -->
+<p>所以结果是“docker please build with tag fs-hello-world the Dockerfile in this directory”。您可以指向任何 Dockerfile，但在我们的示例中，简单地点表示<i>此</i>目录中的 Dockerfile，这也是为什么该命令以点号结尾。构建完成后，您可以使用 <em>docker run fs-hello-world</em> 运行它。</p>
+<!-- -->
+<p>由于镜像只是文件，它们可以四处移动、下载和删除。您可以使用 <em>docker image ls</em> 列出您在本地拥有的镜像，使用 <em>docker image rm</em> 删除它们。查看您可以使用 <em>docker image --help</em> 的其他命令。</p>
+<h3>More meaningful image</h3>
+<p>更有意义的镜像</p>
+<!-- -->
+<p>将 Express 服务器移动到容器应该就像移动“Hello, World!”应用到容器中一样简单。唯一的区别是有更多的文件。幸运的是 <em>COPY</em> 指令可以处理所有这些。让我们删除 index.js 并创建一个新的 Express 服务器。让我们使用 <a href="https://expressjs.com/en/starter/generator.html">express-generator</a> 创建一个基本的 Express 骨架应用程序。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ npx express-generator
+  <span class="token punctuation">..</span>.
+  
+  <span class="token function">install</span> dependencies:
+    $ <span class="token function">npm</span> <span class="token function">install</span>
+
+  run the app:
+    $ <span class="token assign-left variable">DEBUG</span><span class="token operator">=</span>playground:* <span class="token function">npm</span> start</code></pre></div>
+<!-- -->
+<p>首先，让我们运行应用程序以了解我们刚刚创建的内容。请注意，运行应用程序的命令可能与您不同，我的目录名为 playground。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span>
+$ <span class="token assign-left variable">DEBUG</span><span class="token operator">=</span>playground:* <span class="token function">npm</span> start
+  playground:server Listening on port <span class="token number">3000</span> +0ms</code></pre></div>
+<!-- -->
+<p>太好了，现在我们可以导航到 <a href="http://localhost:3000">http://localhost:3000</a> 并且应用程序运行起来了。</p>
+<!-- -->
+<p>基于前面的示例，容器化相对应该很容易。</p>
+<ul>
+<li>以node为基础</li>
+<li>设置工作目录，这样我们就不会干扰基础镜像的内容</li>
+<li>将这个目录下的所有文件复制到镜像中</li>
+<li>从 DEBUG=playground:* npm start 开始</li>
+</ul>
+<p>让我们将下面的Dockerfile 放到项目的根目录中：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token keyword">CMD</span> DEBUG=playground<span class="token punctuation">:</span>* npm start</code></pre></div>
+<!-- -->
+<p>让我们从Dockerfile中构建镜像，使用命令 <em>docker build -t express-server .</em> 并使用 <em>docker run -p 3123:3000 express-server</em> 运行它。 <em>-p</em> 标志将通知 Docker 应该打开来自主机的端口并将其定向到容器中的端口。格式为 <em>-p host-port:application-port</em></p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker run -p <span class="token number">3123</span>:3000 express-server
+
+<span class="token operator">&gt;</span> playground@0.0.0 start
+<span class="token operator">&gt;</span> node ./bin/www
+
+Tue, <span class="token number">29</span> Jun <span class="token number">2021</span> <span class="token number">10</span>:55:10 GMT playground:server Listening on port <span class="token number">3000</span></code></pre></div>
+<!-- -->
+<blockquote>
+<p>如果您的不起作用，请跳到下一部分，我将解释为什么即使您是按照步骤操作的，它仍可能不起作用。</p>
+</blockquote>
+<!-- -->
+<p>应用运行起来了！ 让我们通过向 <a href="http://localhost:3123/">http://localhost:3123/</a> 发送 GET 请求来测试它。</p>
+<!-- -->
+<p>目前关闭它是一个头痛的问题，使用另一个终端和 <em>docker kill</em> 命令来杀死应用程序。 <em>docker kill</em> 将向应用程序发送终止信号 (SIGKILL) 以强制其关闭。 作为参数，它需要容器的名称或 ID。</p>
+<!-- -->
+<p>通过这种方式，当使用id作为参数，ID的开头几位足以让Docker知道我指的是哪个容器。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container <span class="token function">ls</span>
+  CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+  48096ca3ffec   express-server   <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   <span class="token number">9</span> seconds ago   Up <span class="token number">6</span> seconds   <span class="token number">0.0</span>.0.0:3123-<span class="token operator">&gt;</span><span class="token number">3000</span>/tcp, :::3123-<span class="token operator">&gt;</span><span class="token number">3000</span>/tcp   infallible_booth
+
+$ docker <span class="token function">kill</span> <span class="token number">48</span>
+  <span class="token number">48</span></code></pre></div>
+<!-- -->
+<p>将来，我们会在容器外使用与应用程序运行相同的端口， 使用 <em>-p</em> 参数。这样我们就不必记住我们碰巧选择了哪个端口。</p>
+<h4>Fixing potential issues we created by copy-pasting</h4>
+<p>修复我们通过复制粘贴引入的潜在问题</p>
+<!-- -->
+<p>我们需要更改几个步骤以创建更全面的 Dockerfile。甚至可能是因为我们跳过了一个重要的步骤，所以上面的例子并不适用于所有情况。</p>
+<!-- -->
+<p>当我们在我们的机器上运行 npm install，某些情况下，<strong>node package manager</strong> 可能会在安装步骤中安装操作系统特定的依赖项。我们可能不小心使用 COPY 指令将不相关的内容复制到镜像中，比如常见的我们可能将所有 node_modules 复制到镜像中时。</p>
+<!-- -->
+<p>当我们构建镜像时，考虑这一点至关重要。最好在镜像中做大多数事情，例如<i>在容器内</i>运行 <em>npm install</em>， 而不是在构建镜像前做这些事情，最简单的衡量标准就是你会把什么文件push 到Github，那就打到镜像中。手动打包结果或依赖不应当拷贝进去，那些可以在构建阶段再去安装。</p>
+<!-- -->
+<p>我们可以使用文件 <i>.dockerignore</i>来解决这个问题。 .dockerignore 与 .gitignore 非常相似，您可以使用它来防止不需要的文件被复制到您的镜像中。文件应当和Dockerfile放到一起，以下可能是 <i>.dockerignore</i> 的内容：</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">.dockerignore
+.gitignore
+node_modules
+Dockerfile</code></pre></div>
+<!-- -->
+<p>然而，在我们的例子中 .dockerignore 并不是唯一需要的东西。我们需要在构建步骤中安装依赖项，因此 <em>Dockerfile</em> 文件内容改为：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">RUN</span> npm install</span>
+<span class="token keyword">CMD</span> DEBUG=playground<span class="token punctuation">:</span>* npm start</code></pre></div>
+<!-- -->
+<p>npm install 有一定风险。因此不使用 npm install，npm 提供了一个更好的工具来安装依赖项，即 <em>ci</em> 命令。</p>
+<!-- -->
+<p>ci 和 install 的区别：</p>
+<ul>
+<li>install 可能会更新 package-lock.json</li>
+<li>install 可能会安装一个不同版本的依赖项，如果您在依赖项的版本中有 ^ 或 ~ 。</li>
+<li>ci 将在安装任何东西之前删除 node_modules 文件夹</li>
+<li>ci 将遵循 package-lock.json 并且不改变任何文件</li>
+</ul>
+<!-- -->
+<p>简而言之：<em>ci</em> 创建可信的构建，而 <em>install</em> 是您想要安装新依赖项时使用的构建。</p>
+<!-- -->
+<p>由于我们在构建步骤中没有安装任何新的东西，而且我们不希望版本突然改变，我们将使用 <em>ci</em>：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">RUN</span> npm ci</span>
+<span class="token keyword">CMD</span> DEBUG=playground<span class="token punctuation">:</span>* npm start</code></pre></div>
+<!-- -->
+<p>更好的是，我们可以使用 <em>npm ci --only-production</em> 来不浪费时间安装开发依赖项。</p>
+<!-- -->
+<blockquote>
+<p>正如您在比较列表中所注意到的； npm ci 将删除 node_modules 文件夹，因此创建 .dockerignore 无关紧要。但是，当您想要优化构建过程时，.dockerignore 是一个了不起的工具。稍后我们将简要讨论这些优化。</p>
+</blockquote>
+<!-- -->
+<p>现在 Dockerfile 应该可以再次工作了，用 <em>docker build -t express-server . &amp;&amp; docker run -p 3000:3000 express-server</em> 试试吧。</p>
+<!-- -->
+<blockquote>
+<p>注意我们这里将两个命令用 &amp;&amp; 连接起来了。我们使用分开的命令，可以得到（几乎）相同的结果。被 &amp;&amp; 连接起来的命令如果一个失败了，则下一个不会被执行。</p>
+</blockquote>
+<!-- -->
+<p>我们在 npm start 的 CMD 期间设置了一个环境变量 <em>DEBUG=playground:*</em>。但是，使用 Dockerfiles 我们也可以使用指令 ENV 来设置环境变量。让我们这样做：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="token keyword">COPY</span> . .
+
+<span class="token keyword">RUN</span> npm ci 
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">ENV</span> DEBUG=playground<span class="token punctuation">:</span>*</span>
+<span class="gatsby-highlight-code-line"><span class="token keyword">CMD</span> npm start</span></code></pre></div>
+<!-- -->
+<p>如果你好奇什么是DEBUG 环境变量，可以阅读<a href="http://expressjs.com/en/guide/debugging.html#debugging-express">这里</a>.</p>
+<h4>Dockerfile best practices</h4>
+<p>Dockerfile 最佳实践</p>
+<!-- -->
+<!-- -->
+<p>创建镜像时应遵循 2 条经验法则：</p>
+<ul>
+<li>尝试创建尽可能<strong>安全</strong>的镜像</li>
+<li>尝试创建尽可能<strong>小的</strong>镜像</li>
+</ul>
+<p>较小的镜像由于具有较少的攻击面而更安全，而且较小的镜像在部署管道中会运行得更快。</p>
+<!-- -->
+<p>Snyk 列出了 10 个 node/express 容器化过程中的最佳实践，请在 <a href="https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/">此处</a>阅读它们。</p>
+<!-- -->
+<p>我们所做的一大的缺陷是让应用程序以 root 身份运行，而不是使用较低权限的用户身份运行。 让我们对 Dockerfile 做最后的修复：</p>
+<div class="gatsby-highlight" data-language="dockerfile"><pre><code class="language-dockerfile"><span class="token keyword">FROM</span> node<span class="token punctuation">:</span>16
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">USER</span> node</span>  
+<span class="token keyword">WORKDIR</span> /usr/src/app
+
+<span class="gatsby-highlight-code-line"><span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>chown=node<span class="token punctuation">:</span>node . .</span>
+<span class="token keyword">RUN</span> npm ci 
+
+<span class="token keyword">ENV</span> DEBUG=playground<span class="token punctuation">:</span>*
+
+<span class="token keyword">CMD</span> npm start</code></pre></div>
+<h3>Exercise 12.5.</h3>
+<p>练习 12.5</p>
+<h4>Exercise 12.5: Containerizing a node application</h4>
+<p>练习 12.5：容器化node应用程序</p>
+<!-- -->
+<p>第一个练习中，你clone 或拷贝的仓库是一个todo 应用，查看 todo-app/todo-backend 并阅读README， 我们暂时不会触及 。</p>
+<!-- -->
+<p>步骤一 容器化你的应用，创建一个 <i>todo-app/todo-backend/Dockerfile</i> 的Dockerfile 并构建镜像。</p>
+<!-- -->
+<p>步骤二 运行镜像并开放正确的端口。确保使用浏览器访问 <a href="http://localhost:3000/">http://localhost:3000/</a> 计数器会正确增加（或者访问你配置的其他端口）。</p>
+<!-- -->
+<p>技巧：启动容器前，在容器外运行应用来检查。</p>
+<!-- -->
+<p>当应用程序在容器内运行时，获取应用程序根目录中的访问计数器。</p>
+</div></div>
+  
+<div class="course-content "><div class="course-content-inner ">
+<h3>Using docker-compose</h3>
+<!-- -->
+<p>在上一节中，我们创建了 express-server 并且知道它运行在 3000 端口，并使用 <em>docker build -t express-server . &amp;&amp; docker run -p 3000:3000 express-server</em> 运行它。这看起来像是您需要放入脚本中才能记住的东西。 幸运的是  Docker 为我们提供了更好的解决方案。</p>
+<!-- -->
+<p> <a href="https://docs.docker.com/compose/">Docker-compose</a> 是另一个了不起的工具，它可以帮助我们管理容器。 随着我们对容器的了解更多，我们会使用 docker-compose，因为它将帮助我们节省一些配置时间。</p>
+<!-- -->
+<p>从此链接安装 docker-compose 工具：<a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a>。</p>
+<!-- -->
+<p>让我们检查它是否有效：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker-compose -v
+docker-compose version <span class="token number">1.29</span>.2, build 5becea4c</code></pre></div>
+<!-- -->
+<p>现在我们可以将之前这些“咒语”转换为 yaml 文件。用yaml 文件最棒的部分是你可以将这些内容存储到Git 仓库中：</p>
+<p><code class="language-text">docker-compose.yml</code></p>
+<div class="gatsby-highlight" data-language="yaml"><pre><code class="language-yaml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&#x27;3.8&#x27;</span>            <span class="token comment"># Version 3.8 is quite new and should work</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>                    <span class="token comment"># The name of the service, can be anything</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> express<span class="token punctuation">-</span>server <span class="token comment"># Declares which image to use</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> .              <span class="token comment"># Declares where to build if image is not found</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>                <span class="token comment"># Declares the ports to publish</span>
+      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span><span class="token number">3000</span></code></pre></div>
+<!-- -->
+<p>这些行的解释已经写在注释中了。如果你想看完整的标准，参见<a href="https://docs.docker.com/compose/compose-file/compose-file-v3/">文档</a></p>
+<!-- -->
+<p>现在我们可以使用 <em>docker-compose up</em> 来构建和运行应用程序。 如果我们想重建镜像，我们可以使用 <em>docker-compose up --build</em>。</p>
+<!-- -->
+<p>您还可以使用 <em>docker-compose up -d</em>（<em>-d</em> 表示分离）在后台运行应用程序，并使用 <em>docker-compose down</em> 关闭它。</p>
+<!-- -->
+<p>创建这样的文件<i>声明</i>你想要什么，而不是你需要以特定顺序/特定次数运行的脚本文件，这通常是一个很好的做法。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercise 12.6.</h3>
+<p>练习12.6</p>
+<h4>Exercise 12.6: docker-compose</h4>
+<p>练习12.6： docker-compose</p>
+<!-- -->
+<p>创建一个 <i>todo-app/todo-backend/docker-compose.yml</i> 的 docker-compose 文件，该文件适用于上一个练习中的node应用程序。</p>
+<!-- -->
+<p>访问计数器是唯一需要工作的功能。</p>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Utilizing containers in development</h3>
+<p>在开发环境中使用容器</p>
+<!-- -->
+<p>在开发软件时，可以通过多种方式使用容器化来提高您的生活质量。 最有用的情况之一是绕过两次安装和配置工具的需要。</p>
+<!-- -->
+<p>将整个开发环境移动到容器中可能不是最佳选择，但如果这是您想要的，是可能的。 我们将在这一部分的结尾重新审视这个想法。 但在那之前，<i>在容器之外运行node应用程序</i>。</p>
+<!-- -->
+<p>我们在前面练习中的应用程序使用 MongoDB。 让我们探索 <a href="https://hub.docker.com/">Docker Hub</a> 以找到一个 MongoDB 镜像。 Docker Hub 是 Docker 从中提取镜像的默认位置，您也可以使用其他仓库，但由于我们已经深入了解 Docker，因此它是个不错的选项。 通过快速搜索，我可以找到 <a href="https://hub.docker.com/_/mongo">https://hub.docker.com/_/mongo</a></p>
+<p><code class="language-text">docker-compose.yml</code></p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&#x27;3.8&#x27;</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mongo</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mongo
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> 3456<span class="token punctuation">:</span><span class="token number">27017</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MONGO_INITDB_ROOT_USERNAME</span><span class="token punctuation">:</span> root
+      <span class="token key atrule">MONGO_INITDB_ROOT_PASSWORD</span><span class="token punctuation">:</span> example
+      <span class="token key atrule">MONGO_INITDB_DATABASE</span><span class="token punctuation">:</span> the_database</code></pre></div>
+<!-- -->
+<p>上述前两个环境变量的含义在Docker Hub 页面中有说明：</p>
+<!-- -->
+<blockquote>
+<p><i>这些变量结合使用，可创建新用户并设置该用户的密码。该用户是在 admin 身份验证数据库中创建的，并被赋予 root 角色，这是一个“超级用户”角色。</i></p>
+</blockquote>
+<!-- -->
+<p>最后的环境变量 <em>MONGO_INITDB_DATABASE</em> 会告诉MongoDB 创建一个同名的数据库。</p>
+<!-- -->
+<p>你可以使用 <em>-f</em> 参数来指定一个 <i>文件</i> 来运行Docker Compose 命令，例如 。 这样如果我们可能有多个文件，就十分有用。</p>
+<!-- -->
+<p>现在使用 _<em>docker-compose -f docker-compose.dev.yml up -d</em> 启动 MongoDB，它将在后台运行它，您可以使用 <em>docker-compose -f docker-compose.dev.yml logs -f</em> 查看日志，<em>-f</em> 将确保我们<i>滚动</i>日志.</p>
+<!-- -->
+<p>如前所述，现在我们<strong>不想</strong>在容器内运行node应用程序。开发跑在自己容器中的应用是一个挑战。我们会在本章后面讨论相关方案。</p>
+<!-- -->
+<p>首先运行以前的 <em>npm install</em> 来运行起Node应用。然后用相关的环境变量启动应用程序。您可以修改代码将它们设置为默认值或使用 .env 文件。这些文件上传到Github 也是没有风险的，因为它只能用在你的开发环境中。我会在 <em>npm run dev</em> 时将它们放进去，帮助你复制粘贴。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ <span class="token assign-left variable">MONGO_URL</span><span class="token operator">=</span>mongodb://localhost:3456/the_database <span class="token function">npm</span> run dev</code></pre></div>
+<!-- -->
+<p>这还不够；我们需要在容器内创建一个要授权的用户。 url <a href="http://localhost:3000/todos">http://localhost:3000/todos</a> 导致身份验证错误：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash"><span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> <span class="token number">2.0</span>.12
+<span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> to restart at any time, enter <span class="token variable"><span class="token variable">`</span>rs<span class="token variable">`</span></span>
+<span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> watching path<span class="token punctuation">(</span>s<span class="token punctuation">)</span>: *.*
+<span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> watching extensions: js,mjs,json
+<span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> starting <span class="token variable"><span class="token variable">`</span>node ./bin/www<span class="token variable">`</span></span>
+<span class="token punctuation">(</span>node:37616<span class="token punctuation">)</span> UnhandledPromiseRejectionWarning: MongoError: <span class="token builtin class-name">command</span> <span class="token function">find</span> requires authentication
+    at MessageStream.messageHandler <span class="token punctuation">(</span>/Users/mluukkai/opetus/docker-fs/container-app/express-app/node_modules/mongodb/lib/cmap/connection.js:272:20<span class="token punctuation">)</span>
+    at MessageStream.emit <span class="token punctuation">(</span>events.js:314:20<span class="token punctuation">)</span></code></pre></div>
+<h3>Bind mount and initializing the database</h3>
+<p>绑定挂载点与初始化数据库</p>
+<!-- -->
+<p>在<a href="https://hub.docker.com/_/mongo">MongoDB Docker Hub</a> 页面， “Initializing a fresh instance 初始化新实例” 是有关如何执行 JavaScript 以初始化数据库及其用户的信息。</p>
+<!-- -->
+<p>练习中有一个文件 <i>todo-app/todo-backend/mongo/mongo-init.js</i> 内容如下：</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">db<span class="token punctuation">.</span><span class="token function">createUser</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  user<span class="token operator">:</span> <span class="token string">&#x27;the_username&#x27;</span><span class="token punctuation">,</span>
+  pwd<span class="token operator">:</span> <span class="token string">&#x27;the_password&#x27;</span><span class="token punctuation">,</span>
+  roles<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      role<span class="token operator">:</span> <span class="token string">&#x27;dbOwner&#x27;</span><span class="token punctuation">,</span>
+      db<span class="token operator">:</span> <span class="token string">&#x27;the_database&#x27;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+db<span class="token punctuation">.</span><span class="token function">createCollection</span><span class="token punctuation">(</span><span class="token string">&#x27;todos&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+db<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&#x27;Write code&#x27;</span><span class="token punctuation">,</span> done<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+db<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&#x27;Learn about containers&#x27;</span><span class="token punctuation">,</span> done<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>该文件将使用用户和一些待办事项初始化数据库。 接下来，我们只需要在启动时将它放入容器中。</p>
+<!-- -->
+<p>我们可以利用 FROM mongo 创建一个新镜像并 COPY 里面的文件，或者我们可以使用<i>绑定挂载</i>将 init-mongo.js 挂载到容器。让我们用后面这个方法。</p>
+<!-- -->
+<p>挂载是将一个宿主机的文件绑定到容器中，我们可以添加 <em>-v</em>  参数到 <em>container run</em> 命令中。 语法是 <em>-v FILE-IN-HOST:FILE-IN-CONTAINER</em> 。由于我们已经学过了Docker Compose，我们省略这步。在 docker-compose 中，挂载是被定义在 <i>volumes</i> 中的。格式是一样的，先试host，然后是容器：</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml">  <span class="token key atrule">mongo</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mongo
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> 3456<span class="token punctuation">:</span><span class="token number">27017</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MONGO_INITDB_ROOT_USERNAME</span><span class="token punctuation">:</span> root
+      <span class="token key atrule">MONGO_INITDB_ROOT_PASSWORD</span><span class="token punctuation">:</span> example
+      <span class="token key atrule">MONGO_INITDB_DATABASE</span><span class="token punctuation">:</span> the_database
+<span class="gatsby-highlight-code-line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> </span><span class="gatsby-highlight-code-line">      <span class="token punctuation">-</span> ./mongo/mongo<span class="token punctuation">-</span>init.js<span class="token punctuation">:</span>/docker<span class="token punctuation">-</span>entrypoint<span class="token punctuation">-</span>initdb.d/mongo<span class="token punctuation">-</span>init.js</span></code></pre></div>
+<!-- -->
+<p>挂载的结果是宿主机里mongo 文件夹中 <i>mongo-init.js</i> 的文件与容器中的 /docker-entrypoint-initdb.d 文件夹下的 <i>mongo-init.js</i>同步了。某个发生了变化会同步到另一个中。在运行时不需要做出任何修改。但对容器中的开发来说这是关键。</p>
+<!-- -->
+<p>运行 <em>docker-compose -f docker-compose.dev.yml down --volumes</em> 确保没有落下的内容，并从一个干净的启动 <em>docker-compose -f docker-compose.dev.yml up</em>  来初始化数据库。</p>
+<!-- -->
+<p>如果你看到了如下报错：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">mongo_database <span class="token operator">|</span> failed to load: /docker-entrypoint-initdb.d/mongo-init.js
+mongo_database <span class="token operator">|</span> exiting with code -3</code></pre></div>
+<!-- -->
+<p>你可能遇到了权限问题。在处理挂载卷的问题上，这个很常见，在上面的例子中，你可以使用  <em>chmod a+r mongo-init.js</em> ， 会给每个人读该文件的读权限。在使用 <em>chmod</em> 要小心，因为给过多的权限会有安全问题。仅在 mongo-init.js 文件上使用 <em>chmod</em> 。 </p>
+<!-- -->
+<p>现在使用正确的环境变量启动 express 应用程序应该可以工作：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ <span class="token assign-left variable">MONGO_URL</span><span class="token operator">=</span>mongodb://the_username:the_password@localhost:3456/the_database <span class="token function">npm</span> run dev</code></pre></div>
+<!-- -->
+<p>我们检查 <a href="http://localhost:3000/todos">http://localhost:3000/todos</a> 是否能返回所有待办事项。它应该返回我们初始化的两个 todos。我们可以，并且应当使用 Postman 来测试 todos 的基本功能，比如添加或删除 一个todo。</p>
+<h3>Persisting data with volumes</h3>
+<p>使用卷持久化数据</p>
+<!-- -->
+<p>默认情况下，容器不会保存我们的数据。当您关闭 mongo 容器时，您可能无法取回数据。</p>
+<!-- -->
+<p>这是一种罕见的情况，它实际上确实保留了数据，因为为 Mongo 制作 docker 镜像的开发人员已经定义了一个要使用的卷：<a href="https://github.com/docker-library/mongo/blob/cb8a419053858e510fc68ed2d69415b3e50011cb/4.4/Dockerfile#L113">https://github.com/docker-library/mongo/blob/cb8a419053858e510fc68ed2d69415b3e50011cb/ 4.4/Dockerfile#L113</a> 这一行将指示 Docker 保存这些目录中的数据</p>
+<!-- -->
+<p>有两种不同的方法来存储数据：</p>
+<ul>
+<li>在你的文件系统中声明一个位置（称为绑定挂载）</li>
+<li>让 Docker决定数据的存储位置（volume）</li>
+</ul>
+<!-- -->
+<p>在大多数情况下，当您<i>确实</i>需要避免删除数据时，我更喜欢第一个选择。让我们看看两者在 docker-compose 中的作用：</p>
+<p><code class="language-text">docker-compose.yml</code></p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mongo</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mongo
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> 3456<span class="token punctuation">:</span><span class="token number">27017</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MONGO_INITDB_ROOT_USERNAME</span><span class="token punctuation">:</span> root
+      <span class="token key atrule">MONGO_INITDB_ROOT_PASSWORD</span><span class="token punctuation">:</span> example
+      <span class="token key atrule">MONGO_INITDB_DATABASE</span><span class="token punctuation">:</span> database
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./mongo/mongo<span class="token punctuation">-</span>init.js<span class="token punctuation">:</span>/docker<span class="token punctuation">-</span>entrypoint<span class="token punctuation">-</span>initdb.d/mongo<span class="token punctuation">-</span>init.js
+<span class="gatsby-highlight-code-line">      <span class="token punctuation">-</span> ./mongo_data<span class="token punctuation">:</span>/data/db</span></code></pre></div>
+<!-- -->
+<p>以上将创建一个名为 <em>mongo_data</em> 的目录到您的本地文件系统，并将其映射到容器中作为 <em>/data/db</em>。 这意味着 <em>/data/db</em> 中的数据存储在容器之外，但容器仍然可以访问！ 请记住将目录添加到.gitignore。</p>
+<!-- -->
+<p>一个类似很好的方法是使用命名卷：</p>
+<p><code class="language-text">docker-compose.yml</code></p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mongo</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mongo
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> 3456<span class="token punctuation">:</span><span class="token number">27017</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MONGO_INITDB_ROOT_USERNAME</span><span class="token punctuation">:</span> root
+      <span class="token key atrule">MONGO_INITDB_ROOT_PASSWORD</span><span class="token punctuation">:</span> example
+      <span class="token key atrule">MONGO_INITDB_DATABASE</span><span class="token punctuation">:</span> database
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./mongo/mongo<span class="token punctuation">-</span>init.js<span class="token punctuation">:</span>/docker<span class="token punctuation">-</span>entrypoint<span class="token punctuation">-</span>initdb.d/mongo<span class="token punctuation">-</span>init.js
+<span class="gatsby-highlight-code-line">      <span class="token punctuation">-</span> mongo_data<span class="token punctuation">:</span>/data/db</span>
+<span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+  mongo_data<span class="token punctuation">:</span></code></pre></div>
+<!-- -->
+<p>现在卷已创建，但由 Docker 管理。 启动应用程序 (<em>docker-compose -f docker-compose.dev.yml up</em>) 后，您可以使用 <em>docker volume ls</em> 列出卷，使用 <em>docker volume inspect</em> 检查其中之一，甚至使用 <em>docker volume rm</em> 删除它们。 它仍然存储在您的本地文件系统中，但找出 <i>where</i> 可能不像使用前一个选项那么简单。 </p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercise 12.7.</h3>
+<p>练习 12.7</p>
+<h4>Exercise 12.7: Little bit of MongoDB coding</h4>
+<p>练习 12.6：一点点 MongoDB 编码</p>
+<!-- -->
+<p>注意，该练习假设你已经完成了所有练习12.5后教材中所有的配置。你应当让todo应用后台运行在<i>容器外部</i>，MongoDB现在要做容器化了。</p>
+<!-- -->
+<p>Todo 应用没有合适的实现来获取一个Todo (GET <i>/todos/:id</i>) 或者更新一个Todo(PUT <i>/todos/:id</i>)。</p>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Debugging issues in containers</h3>
+<p>调试容器中的问题</p>
+<!-- -->
+<blockquote>
+<p>编码时，您很可能会遇到一切都搞砸的情况。
+- Matti Luukkainen</p>
+</blockquote>
+<!-- -->
+<p>当利用容器进行开发时，由于我们只会无脑 &quot;console.log&quot; 我们需要学习新的调试工具。当代码有错误时，您可能经常处于至少某些东西可以工作的状态，因此您可以继续前进。配置最常处于两种状态之一：1. 好用 2. 崩溃。当您的应用程序处于后一种状态时，我们将介绍一些工具来提供帮助。</p>
+<!-- -->
+<p>当开发软件时，你可以按程序安全地一步步做，随时验证你的代码是否像预期那样输出。但通常在配置的时候可能这行不通。配置可能是你在写完时才会发现它是否会崩溃。因此，当您编写了很长的 docker-compose.yml 或 Dockerfile 并且它不起作用时，您真的需要花点时间思考一下可以确认某些东西是否正常工作的各种方法。</p>
+<!-- -->
+<p><i>质疑一切</i>在这里仍然适用。如<a href="/zh/part3/saving_data_to_mongo_db">第 3 章</a>所述：关键是要系统化。既然问题可能存在于任何地方，那么<i>你必须质疑一切</i>，并一一排除所有导致错误的可能性。</p>
+<!-- -->
+<p>对我自己来说，最有价值的调试方法是停下来真正思考我想要完成的事情，而不是仅仅在问题上猛烈死磕。通常有一个简单的、可替代的解决方案，或快速的谷歌搜索可以让我继续前进。</p>
+<h4>exec</h4>
+<!-- -->
+<p>docker 命令 <a href="https://docs.docker.com/engine/reference/commandline/exec/">exec</a> 是一个重武器。它可用于在运行时直接跳入容器。</p>
+<!-- -->
+<p>让我们在后台启动 Web 服务器，并进行一些调试以使其运行并显示消息“Hello，exec！”在我们的浏览器中。 我们选择<a href="https://www.nginx.com/">Nginx</a>，Nginx 是一个能够提供静态 html 文件的服务器。它有一个我们可以替换的默认 index.html。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container run -d nginx</code></pre></div>
+<p>Ok, now the questions are:</p>
+<ul>
+<li>Where should we go with our browser? </li>
+<li>Is it even running? </li>
+</ul>
+<p>好的，现在问题来了：</p>
+<ul>
+<li>我们应该用浏览器去哪里？</li>
+<li>它还在运行吗？我们知道如何回答后者。</li>
+</ul>
+<!-- -->
+<p>我们知道如何回答后面这个问题：监听正在运行的容器。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container <span class="token function">ls</span>
+CONTAINER ID   IMAGE           COMMAND                  CREATED              STATUS                      PORTS     NAMES
+3f831a57b7cc   nginx           <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   About a minute ago   Up About a minute           <span class="token number">80</span>/tcp    keen_darwin</code></pre></div>
+<!-- -->
+<p>是的！我们同时回答了第一个问题。从上面的输出来看，它似乎侦听端口 80。</p>
+<!-- -->
+<p>让我们关闭它并使用 <em>-p</em> 标志重新启动以让我们的浏览器访问它。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container stop keen_darwin
+$ docker container <span class="token function">rm</span> keen_darwin
+
+$ docker container run -d -p <span class="token number">8080</span>:80 nginx</code></pre></div>
+<!-- -->
+<p>让我们在 <a href="http://localhost:8080">http://localhost:8080</a> 中查看应用程序。该应用程序似乎显示错误消息！让我们直接跳入容器并修复它。保持浏览器打开，我们不需要为此修复关闭容器。我们将在容器内执行 bash，标志 <em>-it</em> 将确保我们可以与容器交互：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">$ docker container <span class="token function">ls</span>
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                                   NAMES
+7edcb36aff08   nginx     <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   About a minute ago   Up About a minute   <span class="token number">0.0</span>.0.0:8080-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp, :::8080-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp   wonderful_ramanujan
+
+$ docker <span class="token builtin class-name">exec</span> -it wonderful_ramanujan <span class="token function">bash</span>
+root@7edcb36aff08:/<span class="token comment">#</span></code></pre></div>
+<!-- -->
+<p>现在我们进入了，我们需要找到有问题的文件并替换它。 Quick Google 告诉我们文件本身是 <em>/usr/share/nginx/html/index.html</em>。</p>
+<!-- -->
+<p>让我们移动到目录并删除文件</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">root@7edcb36aff08:/<span class="token comment"># cd /usr/share/nginx/html/</span>
+root@7edcb36aff08:/<span class="token comment"># rm index.html</span></code></pre></div>
+<!-- -->
+<p>现在，如果我们访问 <a href="http://localhost:8080/">http://localhost:8080/</a> 。我们知道我们删除了正确的文件，页面显示404。让我们用一个包含正确内容的替换它：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">root@7edcb36aff08:/<span class="token comment"># echo &quot;Hello, exec!&quot; &gt; index.html</span></code></pre></div>
+<!-- -->
+<p>刷新页面，我们的消息正确显示了！现在我们知道exec 如何使用来与容器进行交互。记住所有的修改会在容器删除后丢失。为了保存修改，必须使用 <em>commit</em> ，就像 <a href="/en/part12/introduction_to_containers#other-docker-commands">之前章节</a>讲的那样。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercise 12.8.</h3>
+<p>练习 12.8</p>
+<h4>Exercise 12.8: Mongo command-line interface</h4>
+<p>练习 12.8：Mongo 命令行界面</p>
+<!-- -->
+<p>使用<em>script</em> 来记录你的操作，将生成的文件保存到script-answers/exercise12_8.txt 文件中。</p>
+<!-- -->
+<p>当上一个练习中的 MongoDB 正在运行时，使用 mongo 命令行界面 (CLI)。 你可以使用 docker exec 访问数据库，并使用 CLI 添加新的待办事项。</p>
+<!-- -->
+<p>在容器内打开 CLI 的命令只是简单的 <em>mongo</em></p>
+<!-- -->
+<p>mongo CLI 将需要用户名和密码标志才能正确验证：Flags <em>-u root -p example</em> 应该好用，值来自 docker-compose.dev.yml。</p>
+<!-- -->
+<ul>
+<li>第 1 步：运行 MongoDB</li>
+<li>第 2 步：使用docker exec进入容器</li>
+<li>第 3 步：打开 mongo cli</li>
+</ul>
+<!-- -->
+<p>当您连接到 mongo cli 后，您可以要求它在里面显示 dbs：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash"><span class="token operator">&gt;</span> show dbs
+admin         <span class="token number">0</span>.000GB
+config         <span class="token number">0</span>.000GB
+<span class="token builtin class-name">local</span>         <span class="token number">0</span>.000GB
+the_database  <span class="token number">0</span>.000GB</code></pre></div>
+<!-- -->
+<p>要访问正确的数据库：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash"><span class="token operator">&gt;</span> use the_database</code></pre></div>
+<!-- -->
+<p>最后找出集合：</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash"><span class="token operator">&gt;</span> show collections
+todos</code></pre></div>
+<!-- -->
+<p>我们现在可以访问这些集合中的数据：</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">&gt; db.todos.find({})
+{ &quot;_id&quot; : ObjectId(&quot;611e54b688ddbb7e84d3c46b&quot;), &quot;text&quot; : &quot;Write code&quot;, &quot;done&quot; : true }
+{ &quot;_id&quot; : ObjectId(&quot;611e54b688ddbb7e84d3c46c&quot;), &quot;text&quot; : &quot;Learn about containers&quot;, &quot;done&quot; : false }</code></pre></div>
+<!-- -->
+<p>使用<a href="https://docs.mongodb.com/v4.4/reference/method/db.collection.insertOne/#mongodb-method-db.collection.insertOne">这个</a> 文档插入一个带有文本的新待办事项：“增加我工具带中的工具数量”，状态为 false！</p>
+<p>Ensure that you see the new todo both in the express app and when querying from mongo CLI.
+确保你能够看到新的todo，在express 应用和利用mongo CLI 访问数据库时都能看到。</p>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h3>Redis</h3>
+<!-- -->
+<p><a href="https://redis.io/">Redis</a> 是一个<a href="https://redis.com/nosql/key-value-databases/">key-value</a> 数据库。与例如MongoDB相比，数据是存储在键值存储中的，是更小的数据结构，没有例如集合或表的概念，只有一堆待取的带 <i>key</i> 的数据（也就是 <i>value</i>）。</p>
+<!-- -->
+<p>Redis 的一个很好的用例是将其用作<i>缓存</i>。缓存通常用于存储在其他情况下获取速度较慢的数据，并将其保存到不再有效。当其不再有效时，需要再次获取数据并将其存储到缓存中。</p>
+<!-- -->
+<p>Redis 与容器无关。但是既然我们已经能够向您的应用程序添加<i>任何</i> 三方服务，为什么不了解一个新的服务呢。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercises 12.9. - 12.11.</h3>
+<p>练习 12.9 - 12.11</p>
+<h4>Exercise 12.9: Setup redis to project</h4>
+<p>练习 12.9：设置 redis 到项目</p>
+<!-- -->
+<p>Express 服务器已经配置好来使用Redis了，现在只是缺少 <em>REDIS_URL</em> 环境变量。应用会使用该环境变量来连接到Redis。通读 <a href="https://hub.docker.com/_/redis">Docker Hub page for Redis</a> ，将Redis 添加到 <i>todo-app/todo-backend/docker-compose.dev.yml</i> ，在mongo服务后面添加定义内容。</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mongo</span><span class="token punctuation">:</span>
+    <span class="token punctuation">...</span>
+  <span class="token key atrule">redis</span><span class="token punctuation">:</span>
+    <span class="token punctuation">?</span><span class="token punctuation">?</span><span class="token punctuation">?</span></code></pre></div>
+<!-- -->
+<p>由于 Docker Hub 页面没有所有信息，我们可以使用 Google 来帮助我们。通过这样做可以找到 Redis 的默认端口：</p>
+<picture><img style="border-color:#F9B9D3" alt="fullstack content" src="/static/c2052870c4d9cd9369bf0f66dd1b1cf9/5a190/redis_port_by_google.png"/></picture>
+<!-- -->
+<p>我们只有尝试，否则没法确定配置是否好用。应用不会自己使用Redis，下个练习中会这么做。</p>
+<!-- -->
+<p>你现在可以测试配置了，添加如下行</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">const</span> redis <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#x27;../redis&#x27;</span><span class="token punctuation">)</span></code></pre></div>
+<!-- -->
+<p>到express服务器，例如在文件  <i>routes/index.js</i> 中。如果啥也没发生，配置就是正确的，否则服务器就挂了。</p>
+<div class="gatsby-highlight" data-language="bash"><pre><code class="language-bash">events.js:291
+      throw er<span class="token punctuation">;</span> // Unhandled <span class="token string">&#x27;error&#x27;</span> event
+      ^
+
+Error: Redis connection to localhost:637 failed - connect ECONNREFUSED <span class="token number">127.0</span>.0.1:6379
+    at TCPConnectWrap.afterConnect <span class="token punctuation">[</span>as oncomplete<span class="token punctuation">]</span> <span class="token punctuation">(</span>net.js:1144:16<span class="token punctuation">)</span>
+Emitted <span class="token string">&#x27;error&#x27;</span> event on RedisClient instance at:
+    at RedisClient.on_error <span class="token punctuation">(</span>/Users/mluukkai/opetus/docker-fs/container-app/express-app/node_modules/redis/index.js:342:14<span class="token punctuation">)</span>
+    at Socket.<span class="token operator">&lt;</span>anonymous<span class="token operator">&gt;</span> <span class="token punctuation">(</span>/Users/mluukkai/opetus/docker-fs/container-app/express-app/node_modules/redis/index.js:223:14<span class="token punctuation">)</span>
+    at Socket.emit <span class="token punctuation">(</span>events.js:314:20<span class="token punctuation">)</span>
+    at emitErrorNT <span class="token punctuation">(</span>internal/streams/destroy.js:100:8<span class="token punctuation">)</span>
+    at emitErrorCloseNT <span class="token punctuation">(</span>internal/streams/destroy.js:68:3<span class="token punctuation">)</span>
+    at processTicksAndRejections <span class="token punctuation">(</span>internal/process/task_queues.js:80:21<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  errno: -61,
+  code: <span class="token string">&#x27;ECONNREFUSED&#x27;</span>,
+  syscall: <span class="token string">&#x27;connect&#x27;</span>,
+  address: <span class="token string">&#x27;127.0.0.1&#x27;</span>,
+  port: <span class="token number">6379</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>nodemon<span class="token punctuation">]</span> app crashed - waiting <span class="token keyword">for</span> <span class="token function">file</span> changes before starting<span class="token punctuation">..</span>.</code></pre></div>
+<h4>Exercise 12.10:</h4>
+<p>练习 12.10：</p>
+<!-- -->
+<p>该项目已经安装了 <a href="https://www.npmjs.com/package/redis">https://www.npmjs.com/package/redis</a> 和两个函数“promisified”——getAsync 和 setAsync。</p>
+<!-- -->
+<!-- -->
+<ul>
+<li>setAsync 函数接收键和值，使用键来存储值。</li>
+<li>getAsync 函数接受键并在承诺中返回值。</li>
+</ul>
+<!-- -->
+<p>实现一个待办事项计数器：</p>
+<!-- -->
+<ul>
+<li>第 1 步：每当发送添加待办事项的请求时，将计数器加 1。</li>
+<li>第 2 步：创建一个 GET /statistics 端点，您可以在其中询问使用情况元数据。格式应为以下 JSON：</li>
+</ul>
+<div class="gatsby-highlight" data-language="json"><pre><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;added_todos&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>Exercise 12.11:</h4>
+<!-- -->
+<p>使用 <em>script</em> 来记录你的所得，将文件保存到 script-answers/exercise12_11.txt</p>
+<!-- -->
+<p>如果应用运行情况与预期不同，一个直接访问数据库的方式可能精准地找到问题。我们尝试使用 <a href="https://redis.io/topics/rediscli">redis-cli</a> 来访问Redis 数据库</p>
+<!-- -->
+<ul>
+<li>利用 <em>docker exec</em> 去redis 容器中，并打开redis-cli。</li>
+<li>通过 <em><a href="https://redis.io/commands/keys">KEYS *</a></em> 找到您使用的key</li>
+<li>用 <em><a href="https://redis.io/commands/get">GET</a></em> 检查key的value。</li>
+<li>到9001设置计数器的值，从 <a href="https://redis.io/commands/">这里</a> 找到正确的命令。</li>
+<li>确保刷新页面 会更新值。</li>
+<li>利用postman 创建一个新的todo，并确保利用redis-cli 发现计数器如愿增加</li>
+<li>从cli中删除key，并确保计数器生效。</li>
+</ul>
+</div></div></div>
+<div class="course-content "><div class="course-content-inner ">
+<h4>Persisting data with Redis</h4>
+<p>使用 Redis 持久化数据</p>
+<!-- -->
+<p>在上一节中，提到过 <i>默认设置下</i> Redis 不会持久化数据。但是，持久化很容易打开。我们只需要按照  <a href="https://hub.docker.com/_/redis">Docker hub page</a> 页面的指示使用不同的命令启动 Redis：</p>
+<div class="gatsby-highlight" data-language="yml"><pre><code class="language-yml"><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">redis</span><span class="token punctuation">:</span>
+    <span class="token comment"># Everything else</span>
+    <span class="token key atrule">command</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&#x27;redis-server&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;--appendonly&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;yes&#x27;</span><span class="token punctuation">]</span> <span class="token comment"># Overwrite the CMD</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># Declare the volume</span>
+      <span class="token punctuation">-</span> ./redis_data<span class="token punctuation">:</span>/data</code></pre></div>
+<!-- -->
+<p>数据现在会持久化到宿主机的 <i>redis_data</i> 文件夹下了。</p>
+<!-- -->
+<p>请记住将目录添加到 .gitignore。</p>
+<h4>Other functionality Redis has</h4>
+<p>Redis 的其他功能</p>
+<!-- -->
+<p>除了最基本的对key和value的 GET, SET 和 DEL 操作，Redis 还能做许多其他工作。比如 Redis 还可以自动使键自动过期，这在Redis 作为缓存使用时是一个很有用的特性。</p>
+<!-- -->
+<p>Redis 还可以用于发布消息和订阅消息<a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish-subscribe</a>（也叫PubSub）模式。这是对分布式应用的异步通讯机制。在该场景下，Redis 充当两个或多个应用程序之间的<i>消息代理</i>，其中一个通过将消息发送到 redis 来<i>发布</i>消息，另一个<i>订阅</i>这些消息。</p>
+</div></div>
+<div class="banner spacing tasks content-banner" style="background-color:#F9B9D3"><div class="course-content " style="border-color:#F9B9D3;background-color:transparent"><div class="course-content-inner ">
+<h3>Exercises 12.12.</h3>
+<p>练习 12.12  </p>
+<h4>Exercise 12.12: Persisting data in redis</h4>
+<p>在 redis 中持久化数据</p>
+<!-- -->
+<p>注意数据默认不持久化，即运行<em>docker-compose -f docker-compose.dev.yml down</em> 和 <em>docker-compose -f docker-compose.dev.yml up</em> 后运行后计数器的值重置为0。</p>
+<!-- -->
+<p>下面为 redis 数据创建一个卷（通过修改 <i>todo-app/todo-backend/docker-compose.dev.yml </i> 实现）并确保数据在运行了 <em>docker-compose -f docker-compose.dev.yml down</em> 和 <em>docker-compose -f docker-compose.dev.yml up</em> 之后仍能保存。</p>
+</div></div></div></div></div><div class="container spacing element--flex element--centered"><a class="edit-link" target="__BLANK" href="https://github.com/RichardStark/fullstack-hy2020.github.io/edit/source/src/content/12/zh/part12b.md"><span>对讲课材料提出建议</span></a></div><div class="container spacing spacing--after-large prev-next__container "><a class="col-4--mobile push-right-1 prev" href="/zh/part12/容器介绍"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->12a</p><b>上一部分</b></div></a><div class="col-1--mobile separator"></div><a class="col-4--mobile push-left-1 next" href="/zh/part12/编排基础"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->12c</p><b>下一部分</b></div></a></div></div><div class="container spacing--after-small spacing--mobile element--flex" id="footer"><div class="col-5 push-right-3 col-10--mobile order-2--mobile order-2--tablet footer__links element--flex element--space-between"><a href="https://www.helsinki.fi/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="/static/uoh_centre-3689cf9983a2ebc8089c8f078a9c4769.svg" alt="Helsingin yliopiston logo"/></div></div></a><a href="https://www.houston-inc.com/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQ3cHgiIGhlaWdodD0iODJweCIgdmlld0JveD0iMCAwIDI0NyA4MiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTMuMiAoNzI2NDMpIC0gaHR0cHM6Ly9za2V0Y2hhcHAuY29tIC0tPgogICAgPHRpdGxlPmxvZ28vaG91c3RvbjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iMCAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAzNi40NjU0MzgxIDAgMzYuNDY1NDM4MSI+PC9wb2x5Z29uPgogICAgPC9kZWZzPgogICAgPGcgaWQ9ImxvZ28vaG91c3RvbiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImhvdXN0b25fc2ltcGxlLmVwcy1jb3B5LTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LjU4MTg5MywgMjMuMjYzMDQwKSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgPGcgaWQ9IkNsaXAtMiI+PC9nPgogICAgICAgICAgICA8cGF0aCBkPSJNODIuODA1MTI5OCwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDI1LjUzNjU1MDkgTDg1Ljk5MzYyOSwyNS41MzY1NTA5IEw4NS45OTM2MjksMTMuNTA2NjYwMyBMOTAuNDA2NTQ5MywxMy41MDY2NjAzIEw5MC40MDY1NDkzLDEwLjQ0NTY3ODQgTDc4LjM3NTEwMzYsMTAuNDQ1Njc4NCBMNzguMzc1MTAzNiwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDEzLjUwNjY2MDMgWiBNOTYuNDkxMDQ5NSwxNy45NjM2ODg1IEM5Ni40OTEwNDk1LDIwLjU1OTU1NzIgOTguMzE3ODU1NywyMi43MDc5ODQyIDEwMC44ODYxNTcsMjIuNzA3OTg0MiBDMTAzLjQ1NDg4MiwyMi43MDc5ODQyIDEwNS4yNDcxOTQsMjAuNTk1NDY1NyAxMDUuMjQ3MTk0LDE4LjAxNzk3NTMgTDEwNS4yNDcxOTQsMTguMDAwMDIxMSBDMTA1LjI0NzE5NCwxNS40MDQyOTM3IDEwMy40MjA1MjksMTMuMjU1ODY2NyAxMDAuODUyMjI4LDEzLjI1NTg2NjcgQzk4LjI4MzUwMjMsMTMuMjU1ODY2NyA5Ni40OTEwNDk1LDE1LjM2ODM4NTMgOTYuNDkxMDQ5NSwxNy45NDU3MzQzIEw5Ni40OTEwNDk1LDE3Ljk2MzY4ODUgWiBNOTMuMTQ3MDQxMywxOC4wMTc5NzUzIEw5My4xNDcwNDEzLDE3Ljk4MjA2NjkgQzkzLjE0NzA0MTMsMTMuNjg1NDk1NiA5Ni40MDQ4MTI3LDEwLjE3NjkzMDYgMTAwLjg4NjE1NywxMC4xNzY5MzA2IEMxMDUuMzY3OTI1LDEwLjE3NjkzMDYgMTA4LjU5MTM0MywxMy42NDk3Mjg1IDEwOC41OTEzNDMsMTcuOTQ1NzM0MyBMMTA4LjU5MTM0MywxNy45NjM2ODg1IEMxMDguNTkxMzQzLDIyLjI2MDI1OTggMTA1LjMzMzU3MiwyNS43Njg4MjQ3IDEwMC44NTIyMjgsMjUuNzY4ODI0NyBDOTYuMzcwMzE4LDI1Ljc2ODgyNDcgOTMuMTQ3MDQxMywyMi4zMTQxMjI0IDkzLjE0NzA0MTMsMTguMDE3OTc1MyBMOTMuMTQ3MDQxMywxOC4wMTc5NzUzIFogTTcwLjQxMTkxMzcsMjIuNzk3MDQ4NSBDNjguNzU2ODc0MiwyMi43OTcwNDg1IDY3LjM3ODIxNjYsMjIuMDgxMjgzMSA2Ni4wNjg0MDcsMjAuOTcxNzk3NCBMNjQuMTcyMTg3MiwyMy4zMTY0NDg0IEM2NS45MTMxODA4LDI0LjkyNzk0NTQgNjguMTM2Njc2MiwyNS43MzMzNDA0IDcwLjM0MzA2NTYsMjUuNzMzMzQwNCBDNzMuNDgwMTA1NSwyNS43MzMzNDA0IDc1LjY2OTI0NzYsMjQuMDUwMTY4IDc1LjY2OTI0NzYsMjEuMDYxMDAzIEw3NS42NjkyNDc2LDIxLjAyNTA5NDUgQzc1LjcyMTEzMSwxOC4zOTM0NTg4IDc0LjA0ODU2MTUsMTcuMzAxNzg1OCA3MS4xMDExMDExLDE2LjQ5NTgyNTMgQzY4LjU4NDY4MzQsMTUuODMzOTIyNiA2Ny45NjM5MTk5LDE1LjUxMTMxMjIgNjcuOTYzOTE5OSwxNC41MDg5ODYyIEw2Ny45NjM5MTk5LDE0LjQ3MzA3NzggQzY3Ljk2MzkxOTksMTMuNzM4OTM0MSA2OC42MDIyMTM1LDEzLjE2NjY2MTEgNjkuODI1NjQ0OSwxMy4xNjY2NjExIEM3MS4wNDk2NDE4LDEzLjE2NjY2MTEgNzIuMzA3OTkyMSwxMy43MjA5Nzk5IDczLjYwMDgzNywxNC42NTIwNTQ1IEw3NS4yNTU1OTM4LDEyLjE0NTk1NjkgQzczLjc4OTk5MjUsMTAuOTEwNjUwMiA3MS45ODA3MTY0LDEwLjIzMDM2OTIgNjkuODYwNTYzNywxMC4yMzAzNjkyIEM2Ni44OTU3MTQ3LDEwLjIzMDM2OTIgNjQuNzc1NTYyLDEyLjAzODY1NTcgNjQuNzc1NTYyLDE0Ljc3NzU5MjYgTDY0Ljc3NTU2MiwxNC44MTMwNzY5IEM2NC43NzU1NjIsMTcuODAyNjY2MSA2Ni42NzEwNzQ5LDE4LjY0NDUzNSA2OS41ODQxODE5LDE5LjQzMjExNzMgQzcyLjAxNDY0NTYsMjAuMDc2NjMxMiA3Mi41MTQ2Nzc2LDIwLjUwNjI2MDEgNzIuNTE0Njc3NiwyMS4zNDc3MDQ5IEw3Mi41MTQ2Nzc2LDIxLjM4MzA0NzkgQzcyLjUxNDY3NzYsMjIuMjYwMjU5OCA3MS43MjIyODg4LDIyLjc5NzA0ODUgNzAuNDExOTEzNywyMi43OTcwNDg1IEw3MC40MTE5MTM3LDIyLjc5NzA0ODUgWiBNMzEuMzM2NDY5NywxNy45NjM2ODg1IEMzMS4zMzY0Njk3LDIwLjU1OTU1NzIgMzMuMTYzNywyMi43MDc5ODQyIDM1LjczMTg1OTksMjIuNzA3OTg0MiBDMzguMzAwMTYxMSwyMi43MDc5ODQyIDQwLjA5MjQ3MjYsMjAuNTk1NDY1NyA0MC4wOTI0NzI2LDE4LjAxNzk3NTMgTDQwLjA5MjQ3MjYsMTguMDAwMDIxMSBDNDAuMDkyNDcyNiwxNS40MDQyOTM3IDM4LjI2NTI0MjMsMTMuMjU1ODY2NyAzNS42OTY5NDEsMTMuMjU1ODY2NyBDMzMuMTI5MjA1MywxMy4yNTU4NjY3IDMxLjMzNjQ2OTcsMTUuMzY4Mzg1MyAzMS4zMzY0Njk3LDE3Ljk0NTczNDMgTDMxLjMzNjQ2OTcsMTcuOTYzNjg4NSBaIE0yOC4wMDk3MDg5LDE4LjAxNzk3NTMgTDI4LjAwOTcwODksMTcuOTgyMDY2OSBDMjguMDA5NzA4OSwxMy42ODU0OTU2IDMxLjI2NzQ4MDMsMTAuMTc2OTMwNiAzNS43NDg4MjQ1LDEwLjE3NjkzMDYgQzQwLjIzMDczNDIsMTAuMTc2OTMwNiA0My40MzYxOTgsMTMuNjQ5NzI4NSA0My40NTQwMTA5LDE3Ljk0NTczNDMgTDQzLjQ1NDAxMDksMTcuOTYzNjg4NSBDNDMuNDU0MDEwOSwyMi4yNjAyNTk4IDQwLjE5NjIzOTUsMjUuNzY4ODI0NyAzNS43MTQ4OTUzLDI1Ljc2ODgyNDcgQzMxLjIzMjU2MTUsMjUuNzY4ODI0NyAyOC4wMDk3MDg5LDIyLjMxNDEyMjQgMjguMDA5NzA4OSwxOC4wMTc5NzUzIEwyOC4wMDk3MDg5LDE4LjAxNzk3NTMgWiBNNTMuODMwNDE3MSwyNS43MzMzNDA0IEM1Ny43NDI4ODEyLDI1LjczMzM0MDQgNjAuMjA3ODM5NywyMy40OTU4NDkyIDYwLjIwNzgzOTcsMTguOTMwNjcxNSBMNjAuMjA3ODM5NywxMC40MjcxNTg3IEw1Ny4wMDE4MTAzLDEwLjQyNzE1ODcgTDU3LjAwMTgxMDMsMTkuMDczNzM5OCBDNTcuMDAxODEwMywyMS40NzI2Nzc2IDU1LjgxMjMwODEsMjIuNjkwMDMgNTMuODY0NzcwNCwyMi42OTAwMyBDNTEuOTE3Mzc0MSwyMi42OTAwMyA1MC43Mjc3MzA1LDIxLjQxODk1NjMgNTAuNzI3NzMwNSwxOC45NjY1OCBMNTAuNzI3NzMwNSwxMC40MjcxNTg3IEw0Ny41Mzg2NjU4LDEwLjQyNzE1ODcgTDQ3LjUzODY2NTgsMTkuMDM3ODMxMyBDNDcuNTM4NjY1OCwyMy40Nzc4OTUgNDkuOTE3OTUzLDI1LjczMzM0MDQgNTMuODMwNDE3MSwyNS43MzMzNDA0IEw1My44MzA0MTcxLDI1LjczMzM0MDQgWiBNMy4xNTQ1NywzMy4xOTgxOTQ4IEwxMzUuMDM2NjMyLDMzLjE5ODE5NDggTDEzNS4wMzY2MzIsMy4zMDI0NDQ4OCBMMy4xNTQ1NywzLjMwMjQ0NDg4IEwzLjE1NDU3LDMzLjE5ODE5NDggWiBNMCwzNi40NzM5MjA0IEwxMzguMjA4MTY3LDM2LjQ3MzkyMDQgTDEzOC4yMDgxNjcsMC4wMjY3MTkyNjczIEwwLDAuMDI2NzE5MjY3MyBMMCwzNi40NzM5MjA0IFogTTE0LjgyMzExNDMsMTkuNDg1NDE0NCBMMjAuNzE4NjAwNSwxOS40ODU0MTQ0IEwyMC43MTg2MDA1LDI1LjUzNjU1MDkgTDIzLjkwNzY2NTIsMjUuNTM2NTUwOSBMMjMuOTA3NjY1MiwxMC40NDU2Nzg0IEwyMC43MTg2MDA1LDEwLjQ0NTY3ODQgTDIwLjcxODYwMDUsMTYuNDA2MDU0MiBMMTQuODIzMTE0MywxNi40MDYwNTQyIEwxNC44MjMxMTQzLDEwLjQ0NTY3ODQgTDExLjYzNDc1NjUsMTAuNDQ1Njc4NCBMMTEuNjM0NzU2NSwyNS41MzY1NTA5IEwxNC44MjMxMTQzLDI1LjUzNjU1MDkgTDE0LjgyMzExNDMsMTkuNDg1NDE0NCBaIE0xMTUuODY0OTIyLDE1Ljk0MTUwNjUgTDEyMi44OTc2MDIsMjUuNTM2NTUwOSBMMTI1LjYyMDk4OCwyNS41MzY1NTA5IEwxMjUuNjIwOTg4LDEwLjQ0NTY3ODQgTDEyMi40NjY0MTgsMTAuNDQ1Njc4NCBMMTIyLjQ2NjQxOCwxOS43MzYyMDggTDExNS42NTgzNzcsMTAuNDQ1Njc4NCBMMTEyLjcxMDkxNywxMC40NDU2Nzg0IEwxMTIuNzEwOTE3LDI1LjUzNjU1MDkgTDExNS44NjQ5MjIsMjUuNTM2NTUwOSBMMTE1Ljg2NDkyMiwxNS45NDE1MDY1IEwxMTUuODY0OTIyLDE1Ljk0MTUwNjUgWiIgaWQ9IkZpbGwtMSIgZmlsbD0iIzAwMDEwNSIgbWFzaz0idXJsKCNtYXNrLTIpIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" alt="Houston inc. logo"/></div></div></a></div><div class="col-5 col-5--mobile order-1--mobile order-1--tablet footer__navigation element--flex"><div class="footer__navigation-link-container"><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/about">关于课程</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/#course-contents">课程内容</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/faq">常见问题</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/companies">合作伙伴</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/challenge">挑战</a></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(!(parseInt(navigator.doNotTrack) === 1 || parseInt(window.doNotTrack) === 1 || parseInt(navigator.msDoNotTrack) === 1 || navigator.doNotTrack === "yes")) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135975842-1', 'fullstackopen.com', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/zh/part12/构建配置环境";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-b048fbb12687222f4356.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f4fbc5442c0ed5fcadc4.js"],"component---src-pages-about-en-js":["/component---src-pages-about-en-js-5b5a8430d6d4e97027d8.js"],"component---src-pages-about-es-js":["/component---src-pages-about-es-js-43ca4f465eb9d91a1e63.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b3413bd47b5faea11ba3.js"],"component---src-pages-about-zh-js":["/component---src-pages-about-zh-js-58afd9244a753e3db031.js"],"component---src-pages-challenge-en-js":["/component---src-pages-challenge-en-js-059fea377f53ad355fdf.js"],"component---src-pages-challenge-es-js":["/component---src-pages-challenge-es-js-294b7943b9cd62c323fc.js"],"component---src-pages-challenge-js":["/component---src-pages-challenge-js-af4cb9cd92af61bf9516.js"],"component---src-pages-challenge-zh-js":["/component---src-pages-challenge-zh-js-0bb7cda0fa7f1437c4e8.js"],"component---src-pages-companies-en-js":["/component---src-pages-companies-en-js-73f6b018b7b6d171e7d4.js"],"component---src-pages-companies-es-js":["/component---src-pages-companies-es-js-e6b87a93d8827d4cc502.js"],"component---src-pages-companies-js":["/component---src-pages-companies-js-8de23a7b3d9614e97ec2.js"],"component---src-pages-companies-zh-js":["/component---src-pages-companies-zh-js-c1210353185f6e66db68.js"],"component---src-pages-faq-en-js":["/component---src-pages-faq-en-js-a4c52e4823fca6d672a9.js"],"component---src-pages-faq-es-js":["/component---src-pages-faq-es-js-40146852f7705e0cfb20.js"],"component---src-pages-faq-js":["/component---src-pages-faq-js-e2148f989a8a05755787.js"],"component---src-pages-faq-zh-js":["/component---src-pages-faq-zh-js-844c6ffcb6d2eac62bd9.js"],"component---src-pages-index-en-js":["/component---src-pages-index-en-js-a347a006f079d54370f6.js"],"component---src-pages-index-es-js":["/component---src-pages-index-es-js-31b82ae957f2b4234d47.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d3b3cf8562b6d041f3d0.js"],"component---src-pages-index-zh-js":["/component---src-pages-index-zh-js-87526ff6b692672eb8d8.js"],"component---src-pages-search-en-js":["/component---src-pages-search-en-js-1e81f46032fb7b0b7fa4.js"],"component---src-pages-search-js":["/component---src-pages-search-js-11cd81d1ec8ed9307c5c.js"],"component---src-pages-search-zh-js":["/component---src-pages-search-zh-js-e486d9ea86fb98602cbb.js"],"component---src-templates-content-template-js":["/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js"],"component---src-templates-part-intro-template-js":["/component---src-templates-part-intro-template-js-b438befea814a7f00f96.js"]};/*]]>*/</script><script src="/webpack-runtime-615dc111c703ff6885cd.js" async=""></script><script src="/framework-8cb3270495e919798e3b.js" async=""></script><script src="/commons-9bbfcb18005d64442a91.js" async=""></script><script src="/30844a71ec80b1e82ad30323d06b914984ff6c2b-bfbd018b7380e158211d.js" async=""></script><script src="/5d7a54886b2742230021cc39eab839038eb7a677-7e0df6a64154312ad871.js" async=""></script><script src="/styles-89fd2ae28bdf06750a71.js" async=""></script><script src="/ff8e348e8d42e8d61f84312613c75c948ce81396-73e1478ec1d8afda6a11.js" async=""></script><script src="/component---src-templates-content-template-js-829a57d9b7cd00e7c8f6.js" async=""></script><script src="/app-b048fbb12687222f4356.js" async=""></script><script src="/e4b9374bcd292c90587e3ccf579324c3065ac22f-91cf5431cb3e1fc76518.js" async=""></script></body></html>
